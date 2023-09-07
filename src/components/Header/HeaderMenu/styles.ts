@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
-export const Container = styled.div``;
+export const Container = styled.div`
+    margin-right: 30px;
+`;
 
 export const Ul = styled.ul`
     list-style: none;

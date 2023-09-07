@@ -1,14 +1,19 @@
 import * as C from './App.styles';
 
 // Images
-import representEv from './assets/representEv.jpg';
 import bioLogo from './assets/1.png';
-import rndmImg from './assets/imgRandom.jpg';
 
-// Components
-import { MenuList } from './components/HeaderMenu';
-import { TopMenu } from './components/TopMenu';
-import { Enterprises } from './components/RepresentedEnterprises'
+// Components - Header
+import { MenuList } from './components/Header/HeaderMenu';
+import { TopMenu } from './components/Header/TopMenu';
+
+// Components - Sections
+import { AboutUs } from './components/AboutUs/Left';
+import { AboutUsTraits } from './components/AboutUs/Right';
+import { TeamMembers } from './components/Team';
+import { RepEnterprises } from './components/Represented';
+import { Services } from './components/Job';
+import { ContactUs } from './components/Contact';
 
 const App = () => { // Header tem que ocupar a largura da page toda
   return (
@@ -30,64 +35,34 @@ const App = () => { // Header tem que ocupar a largura da page toda
 
       <C.EnterpriseSection>
         <C.EnterpriseLeft>
-          A solução para a sua pesquisa
+          <AboutUs />
         </C.EnterpriseLeft>
         <C.EnterpriseRight>
-          Somos uma empresa de representação <br/>
-          comercial na área de biotecnologia. <br/> <br/>
-          
-          Representamos as melhores empresas <br/>
-          no segmento de equipamentos e ...
+          <AboutUsTraits />
         </C.EnterpriseRight>
       </C.EnterpriseSection>
 
-      <C.SectionRepresented>
-        <Enterprises />
-      </C.SectionRepresented>
+      <C.SectionTeam>
+        <TeamMembers />
+      </C.SectionTeam>
 
       <C.SectionAbout>
-        <C.AboutLeft>
-          <img src={representEv} alt="" />
-        </C.AboutLeft>
-        <C.AboutRight>
-          <C.TextRight>
-            <h3>O Representante</h3>
-            <p>Logística Sandine</p>
-            <p>Escola de Marketing Marafela</p>
-            <p>Grupo de Mídia Digital Silva</p>
-            <p>Samurai Produções</p>
-            <p>Bertold Soluções</p>
-            <p>Banco Minas Douradas</p>
-          </C.TextRight>
-        </C.AboutRight>
-      </C.SectionAbout>
+        <RepEnterprises />
+      </C.SectionAbout> 
 
-      <C.SectionContact>
-        <C.ContactLeft>
-          <C.ContactText>
-            <h2>Fale conosco</h2> <br />
-            <p>Salão de Conferência</p>
-            <p>Rua qualquer, 1234</p>
-            <p>Cidade - SP</p>
-            
-            <br />
+      <C.SectionServices>
+        <Services />
+      </C.SectionServices>
 
-            <p>(12)3456-7890</p>
-            <p>ola@hotmail.com</p>
-            <p>@grandesite</p>
-
-            <br />
-
-            <button>Reserve sua vaga</button>
-          </C.ContactText>
-        </C.ContactLeft>
-        <C.ContactRight>
-          <img src={rndmImg} alt="" />
-        </C.ContactRight>
-      </C.SectionContact>
+      <C.Contact>
+        <ContactUs />
+      </C.Contact>
 
       <C.Footer>
-        Em Produção..... Todos os direitos reservados.
+        <div>
+          Desenvolvido por Bruno Biano.
+          <span>&copy; Bruno Biano. Todos os direitos reservados para BioTechPar.</span>
+        </div>
       </C.Footer>
     </C.Container>
   </C.BodyContainer>
