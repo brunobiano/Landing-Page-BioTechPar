@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/Landing-Page-BioTechPar/static/css/main.4152c3d3.css",
+    "main.js": "/Landing-Page-BioTechPar/static/js/main.86661432.js",
+    "static/js/787.71e672d5.chunk.js": "/Landing-Page-BioTechPar/static/js/787.71e672d5.chunk.js",
+    "static/media/whatsapp2.png": "/Landing-Page-BioTechPar/static/media/whatsapp2.5ee61a869c50b92906a8.png",
+    "static/media/Duax.jpg": "/Landing-Page-BioTechPar/static/media/Duax.2cbf033ac1d47136e2d0.jpg",
+    "static/media/director.jpg": "/Landing-Page-BioTechPar/static/media/director.88735dd3a0953412a072.jpg",
+    "static/media/associate.jpg": "/Landing-Page-BioTechPar/static/media/associate.0730d1fa97da45a904bf.jpg",
+    "static/media/1.png": "/Landing-Page-BioTechPar/static/media/1.5cba0562b56df2bf99c1.png",
+    "static/media/phone.png": "/Landing-Page-BioTechPar/static/media/phone.239a7bff10a4c4caee45.png",
+    "static/media/map.png": "/Landing-Page-BioTechPar/static/media/map.50d986133a0e6b3a5096.png",
+    "static/media/Pictogrammers-Material-Whatsapp.512.png": "/Landing-Page-BioTechPar/static/media/Pictogrammers-Material-Whatsapp.512.f8ea87c3f0f8bb82c95b.png",
+    "static/media/whatsapp.png": "/Landing-Page-BioTechPar/static/media/whatsapp.f8ea87c3f0f8bb82c95b.png",
+    "index.html": "/Landing-Page-BioTechPar/index.html",
+    "main.4152c3d3.css.map": "/Landing-Page-BioTechPar/static/css/main.4152c3d3.css.map",
+    "main.86661432.js.map": "/Landing-Page-BioTechPar/static/js/main.86661432.js.map",
+    "787.71e672d5.chunk.js.map": "/Landing-Page-BioTechPar/static/js/787.71e672d5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4152c3d3.css",
+    "static/js/main.86661432.js"
+  ]
+}
