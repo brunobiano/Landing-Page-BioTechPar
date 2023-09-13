@@ -1,9 +1,11 @@
 import * as C from './style';
 
+import picture from './assets/pic.jpg';
+
 export const AboutUs = () => {
     return (
         <C.Container>
-            <h3>Quem Somos</h3>
+            <h3><img src={picture} alt="" width={25}/>&nbsp; Quem Somos</h3>
             <p>
                 A BioTechPar é uma empresa de representação comercial atuante na área de biotecnologia fundada em 2023 por Evandro Silva,
                 biólogo com especialização em Gestão de Negócios e mais de uma década de experiência em vendas consultivas de equipamentos e 

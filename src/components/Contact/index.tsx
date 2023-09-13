@@ -1,4 +1,5 @@
 import * as C from './style';
+import React, { useState } from 'react';
 
 import location from './assets/map.png';
 import phone from './assets/phone.png';
@@ -6,35 +7,45 @@ import email from './assets/mail.png';
 import whatsapp from './assets/whatsapp.png';
 
 export const ContactUs = () => {
+    const [selectedOption, setSelectedOption] = useState<string>("");
+    const [isInputVisible, setInputVisible] = useState<boolean>(false);
+
+    const handleOptionChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+    const selectedValue = event.target.value;
+    setSelectedOption(selectedValue);
+
+    setInputVisible(selectedValue !== "");
+    };
+    
     return (
         <C.Container>
             <C.LeftSide>
-                <div className='teste'><h1>Entre em Contato</h1></div>
+                <div className='contactNumbers'><h1>Entre em Contato</h1></div>
                 <C.OurContacts className='top-left'>
                     <C.Title>
                         <img src={location} alt="" width={20}/>
-                        <h4>Nosso Endereço</h4>
+                        <h4>Endereço</h4>
                     </C.Title>
                     <C.Body>
-                        <p>R. Alfeu Tavares, 212 - Rudge Ramos, <br />
-                            São Bernardo do Campo - SP, <br />
-                            09641-000
+                        <p>R. Professor Thomaz Wartelsteiner, 196 - Portão, <br />
+                            Curitiba - PR, <br />
+                            80330-070
                         </p>
                     </C.Body>
                 </C.OurContacts>
                 <C.OurContacts className='top-right'>
                     <C.Title>
                         <img src={phone} alt="" width={30}/>
-                        <h4>Nosso Telefone</h4>
+                        <h4>Telefone</h4>
                     </C.Title>
                     <C.Body>
-                        <p>(16) 9 9288 1987</p>
+                        <p>(16) 9 9288-1987</p>
                     </C.Body>
                 </C.OurContacts>
                 <C.OurContacts className='bottom-left'>
                     <C.Title>
                         <img src={email} alt="" width={30}/>
-                        <h4>Nosso E-mail</h4>
+                        <h4>E-mail</h4>
                     </C.Title>
                     <C.Body>
                         <p>evandro@biotechpar.com.br</p>
@@ -43,27 +54,34 @@ export const ContactUs = () => {
                 <C.OurContacts className='bottom-right'>
                     <C.Title>
                         <img src={whatsapp} alt="" width={30}/>
-                        <h4>Nosso Whatsapp</h4>
+                        <h4>Whatsapp</h4>
                     </C.Title>
                     <C.Body>
-                        <p>(16) 9 9288 1987</p>
+                        <p>(16) 9 9288-1987</p>
                     </C.Body>
                 </C.OurContacts>
             </C.LeftSide>
             <C.RightSide>
                 <C.Inputs>
-                    <input type="text" className='top-left' placeholder='Nome'/>
-                    <input type="text" className='top-right' placeholder='TeleFone'/>
-                    <input type="text" className='bottom-left' placeholder='E-mail'/>
-                    <select className='bottom-right' name='empresas'>
+                    <input type="text" className='left1' placeholder='Nome'/>
+                    <input type="text" className='right1' placeholder='Telefone'/>
+                    <input type="text" className='left2' placeholder='E-mail'/>
+                    <select className='right2' name='empresas' value={selectedOption} onChange={handleOptionChange}>
                         <option value='' disabled selected>Escolha uma opção</option>
                         <option value="opcao1">Universidade</option>
-                        <option value="opcao2">Laboratório Particular</option>
+                        <option value="opcao2">Laboratório</option>
                         <option value="opcao3">Hospital</option>
                         <option value="opcao4">Empresa</option>
                         <option value="opcao5">Outro</option>
                     </select>
-                    <textarea placeholder='Assunto'></textarea>
+                    {isInputVisible && (
+                        <>
+                            <input type="text" className='hiddenInput left3' placeholder='Nome do local'/>
+                            <input type="text" className='hiddenInput left4' placeholder='Departamento/ laboratório'/>
+                            <input type="text" className='hiddenInput left5' placeholder='Endereço Completo'/>
+                        </>
+                    )}                    
+                    <textarea placeholder='Mensagem'></textarea>
                     <button>Enviar</button>
                 </C.Inputs>
             </C.RightSide>

@@ -14,4 +14,12 @@ export const Container = styled.div`
     img {
         margin-right: 10px;
     }
+
+    .rotate-effect {
+     transition: transform 0.1s;   
+    }
+
+    .rotate-effect:hover {
+        transform: rotate(20deg);
+    }
 `;

@@ -1,6 +1,6 @@
 import * as C from './style';
 
-import target from './assets/target.png';
+import target from './assets/alvo.png';
 import vision from './assets/visão.png';
 import values from './assets/valores.png';
 
@@ -8,7 +8,7 @@ export const AboutUsTraits = () => {
     return (
         <C.Container>
             <p>
-                <img src={target} alt="" />
+                <img src={target} alt="" className='rotate-effect'/>
                 <strong>Missão: </strong> &nbsp;
                 Resolver desafios enfrentados pelas representadas por meio
                 de atendimento personalizado com excelência e atenção
@@ -16,14 +16,14 @@ export const AboutUsTraits = () => {
                 fornecedores e clientes.
             </p>
             <p>
-                <img src={vision} alt="" />
+                <img src={vision} alt="" className='rotate-effect'/>
                 <strong>Visão: </strong> &nbsp;
                 Ser a principal referência no setor de biotecnologia
                 como <br/> representante das maiores e mais renomadas
                 <br/> empresas deste segmento.
             </p>
             <p>
-                <img src={values} alt="" />
+                <img src={values} alt="" className='rotate-effect'/>
                 <strong>Valores: </strong> &nbsp;
                 Integridade, inovação, transparência, ética, comprometimento,
                 responsabilidade, proatividade e principalmente respeito às

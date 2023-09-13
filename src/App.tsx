@@ -1,15 +1,16 @@
 import * as C from './App.styles';
 
 // Images
-import bioLogo from './assets/1.png';
+import bioLogo from './assets/logo.png';
+import home from './assets/home.jpg';
 
 // Components - Header
 import { MenuList } from './components/Header/HeaderMenu';
 import { TopMenu } from './components/Header/TopMenu';
 
 // Components - Sections
-import { AboutUs } from './components/AboutUs/Left';
-import { AboutUsTraits } from './components/AboutUs/Right';
+import { AboutUs } from './components/AboutUs/AboutUs';
+import { AboutUsTraits } from './components/AboutUs/AboutTraits';
 import { TeamMembers } from './components/Team';
 import { RepEnterprises } from './components/Represented';
 import { Services } from './components/Job';
@@ -25,7 +26,7 @@ const App = () => { // Header tem que ocupar a largura da page toda
         </C.Menu1>
         <C.HeaderArea>
           <C.Logo>
-            <img src={bioLogo} alt="" width={200}/>
+            <a href="#"><img src={bioLogo} alt="" width={180}/></a>
           </C.Logo>
           <C.MenuArea>
             <MenuList />
@@ -33,34 +34,38 @@ const App = () => { // Header tem que ocupar a largura da page toda
         </C.HeaderArea>
       </C.Header>
 
-      <C.EnterpriseSection>
-        <C.EnterpriseLeft>
+      <C.SectionHome>
+        <img src={home} alt="" height={450}/>
+      </C.SectionHome>
+      
+      <C.EnterpriseSection id='ourMission'>
+        <C.About>
           <AboutUs />
-        </C.EnterpriseLeft>
-        <C.EnterpriseRight>
+        </C.About>
+        <C.Traits>
           <AboutUsTraits />
-        </C.EnterpriseRight>
+        </C.Traits>
       </C.EnterpriseSection>
 
-      <C.SectionTeam>
+      <C.SectionTeam id='team'>
         <TeamMembers />
       </C.SectionTeam>
 
-      <C.SectionAbout>
+      <C.SectionAbout id='about'>
         <RepEnterprises />
       </C.SectionAbout> 
 
-      <C.SectionServices>
+      <C.SectionServices id='job'>
         <Services />
       </C.SectionServices>
 
-      <C.Contact>
+      <C.Contact id="contact">
         <ContactUs />
       </C.Contact>
 
       <C.Footer>
         <div>
-          Desenvolvido por Bruno Biano.
+          Desenvolvido por <a href="https://www.linkedin.com/in/brunobiano/" target='_blank'>Bruno Biano</a>.
           <span>&copy; Bruno Biano. Todos os direitos reservados para BioTechPar.</span>
         </div>
       </C.Footer>
@@ -73,8 +78,6 @@ export default App;
 
 // Lembretes
 
-
-/*Altura de cada seção poderá ser feita para ser dinâmica, dependendo do que o Evandro quiser
-
-Botão criado em contactText vai virar um componente e talvez vai sair dessa area, na div de fora.
+/* 
+  Botão criado em contactText vai virar um componente e talvez vai sair dessa area, na div de fora.
 */

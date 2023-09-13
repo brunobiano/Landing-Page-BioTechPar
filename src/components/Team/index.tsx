@@ -2,7 +2,7 @@ import * as C from './style';
 
 import director from './assets/director.jpg';
 import associate from './assets/associate.jpg';
-import linkedin from '../../assets/icons/lk.png'
+import linkedin from '../../assets/icons/lk2.png'
 
 export const TeamMembers = () => {
     return(
@@ -14,7 +14,7 @@ export const TeamMembers = () => {
                 <C.Member>
                     <img src={director} alt="" className='teamPhoto'/>
                     <h4>Evandro Silva</h4>
-                    <p>Fundador e CEO responsável pela Diretoria <br/> Executiva e Comercial</p>
+                    <p>Fundador e Diretor Comercial <br/><br /></p>
                     <a href="https://www.linkedin.com/in/evandrodasilva/" target='_blank'><img src={linkedin} alt="" width='50px'/></a>
                 </C.Member>
 
