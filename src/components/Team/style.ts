@@ -10,6 +10,10 @@ export const Container = styled.div`
 export const Title = styled.div`
     text-align: center;
     margin-bottom: 40px;
+
+    h1 {
+        color: #476C5E;
+    }
 `;
 
 export const Members = styled.div`

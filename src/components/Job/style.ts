@@ -10,6 +10,10 @@ export const Container = styled.div`
 
 export const Title = styled.div`
     margin-bottom: 30px;
+
+    h1 {
+        color: #476C5E;
+    }
 `;
 
 export const Body = styled.div`

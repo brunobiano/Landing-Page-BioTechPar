@@ -3,11 +3,12 @@ import styled from "styled-components";
 export const Container = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: center;
     color: #1B1B1B;
     line-height: 2.0;
+    text-align: justify;
 
-    h3 {
+    h1 {
         text-align: center;
+        color: #476C5E;
     }
-`; // Editar font-style e size
+`;

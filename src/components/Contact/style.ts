@@ -5,6 +5,18 @@ export const Container = styled.div`
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+
+    h1 {
+        color: #FFF;
+    }
+
+    p {
+        color: #FFF;
+    }
+
+    h4 {
+        color: #FFF;
+    }
 `;
 
 export const LeftSide = styled.div`
@@ -19,6 +31,7 @@ export const LeftSide = styled.div`
     .contactNumbers {
         grid-column: span 2;
         text-align: center;
+        
     }
 
     .top-left {
@@ -26,26 +39,18 @@ export const LeftSide = styled.div`
         grid-row: 2;
     };
 
-    .top-right {
-        grid-column: 2;
-        grid-row: 2;
-    };
-
     .bottom-left {
         grid-column: 1;
         grid-row: 3;
-    };
-
-    .bottom-right {
-        grid-column: 2;
-        grid-row: 3;
+        padding-left: 40px;
     };
 `;
 
 export const OurContacts = styled.div`
     display: flex;
     flex-direction: column;
-
+    font-size: 22px;
+    margin-top: -20px;
 `;
 
 export const Title = styled.div`
@@ -56,7 +61,7 @@ export const Title = styled.div`
     color: #0C3B2E;
 
     img {
-        padding-right: 10px;
+        padding-right: 14px;
     };
 `;
 
@@ -65,8 +70,12 @@ export const Body = styled.div`
     margin-left: 15px;
     
     p {
-        font-size: 12px;
-        margin-left: 40px;
+        font-size: 22px;
+        margin-left: 60px;
+    }
+
+    .telephoneP {
+        margin-left: 100px;
     }
 `;
 

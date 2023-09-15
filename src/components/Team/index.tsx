@@ -1,7 +1,7 @@
 import * as C from './style';
 
-import director from './assets/director.jpg';
-import associate from './assets/associate.jpg';
+import director from './assets/img.jpg';
+import associate from './assets/img2.jpg';
 import linkedin from '../../assets/icons/lk2.png'
 
 export const TeamMembers = () => {
@@ -19,13 +19,15 @@ export const TeamMembers = () => {
                 </C.Member>
 
                 <C.Member>
-                    <img src={associate} alt="" className='teamPhoto'/>
+                    <img src={associate} alt="" className='teamPhoto' width={278} height={315}/>
                     <h4>Karoline Milani</h4>
                     <p>Sócia e Diretora Administrativa, Financeira e Jurídica</p><br />
-                    <a href="https://www.linkedin.com/company/biotechpar-representa%C3%A7%C3%A3o-e-consultoria/about/" target='_blank'><img src={linkedin} alt="" width='50px' className='teste'/></a>
                 </C.Member>
             </C.Members>
         </C.Container>
     )
 }
+
+// retirado (possivel recolocação)
+// <a href="https://www.linkedin.com/company/biotechpar-representa%C3%A7%C3%A3o-e-consultoria/about/" target='_blank'><img src={linkedin} alt="" width='50px' className='teste'/></a>
 

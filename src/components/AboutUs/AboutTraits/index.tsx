@@ -11,24 +11,29 @@ export const AboutUsTraits = () => {
                 <img src={target} alt="" className='rotate-effect'/>
                 <strong>Missão: </strong> &nbsp;
                 Resolver desafios enfrentados pelas representadas por meio
-                de atendimento personalizado com excelência e atenção
-                principalmente <br/> na intermediação da comunicação entre
+                de atendimento personalizado com excelência e atenção <br/> &nbsp;
+                principalmente na intermediação da comunicação entre
                 fornecedores e clientes.
             </p>
             <p>
                 <img src={vision} alt="" className='rotate-effect'/>
-                <strong>Visão: </strong> &nbsp;
+                <strong>&nbsp; &nbsp; Visão: </strong> &nbsp; &nbsp;
                 Ser a principal referência no setor de biotecnologia
-                como <br/> representante das maiores e mais renomadas
-                <br/> empresas deste segmento.
+                como representante das maiores e mais renomadas empresas <br /> &nbsp; &nbsp;
+                deste segmento.
             </p>
             <p>
                 <img src={values} alt="" className='rotate-effect'/>
                 <strong>Valores: </strong> &nbsp;
                 Integridade, inovação, transparência, ética, comprometimento,
-                responsabilidade, proatividade e principalmente respeito às
-                <br/> normas e às pessoas.
+                responsabilidade, proatividade e principalmente respeito <br/> &nbsp;
+                às normas e às pessoas.
             </p>
         </C.Container>
     );
 };
+
+/**
+ terei que consertar o problema com o uso de &nbsp, quando for fazer
+ a responsividade eu trabalho melhor o uso do css
+ */

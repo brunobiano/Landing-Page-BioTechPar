@@ -2,7 +2,7 @@ import * as C from './App.styles';
 
 // Images
 import bioLogo from './assets/logo.png';
-import home from './assets/home.jpg';
+import test from './assets/gif.gif';
 
 // Components - Header
 import { MenuList } from './components/Header/HeaderMenu';
@@ -16,7 +16,7 @@ import { RepEnterprises } from './components/Represented';
 import { Services } from './components/Job';
 import { ContactUs } from './components/Contact';
 
-const App = () => { // Header tem que ocupar a largura da page toda
+const App = () => {
   return (
   <C.BodyContainer>
     <C.Container>
@@ -26,7 +26,7 @@ const App = () => { // Header tem que ocupar a largura da page toda
         </C.Menu1>
         <C.HeaderArea>
           <C.Logo>
-            <a href="#"><img src={bioLogo} alt="" width={180}/></a>
+            <a href="#"><img src={bioLogo} alt="" width={300}/></a>
           </C.Logo>
           <C.MenuArea>
             <MenuList />
@@ -35,7 +35,7 @@ const App = () => { // Header tem que ocupar a largura da page toda
       </C.Header>
 
       <C.SectionHome>
-        <img src={home} alt="" height={450}/>
+        <img src={test} alt="" height={450}/>
       </C.SectionHome>
       
       <C.EnterpriseSection id='ourMission'>
@@ -51,9 +51,9 @@ const App = () => { // Header tem que ocupar a largura da page toda
         <TeamMembers />
       </C.SectionTeam>
 
-      <C.SectionAbout id='about'>
+      <C.SectionRepresented id='about'>
         <RepEnterprises />
-      </C.SectionAbout> 
+      </C.SectionRepresented> 
 
       <C.SectionServices id='job'>
         <Services />
@@ -80,4 +80,7 @@ export default App;
 
 /* 
   Botão criado em contactText vai virar um componente e talvez vai sair dessa area, na div de fora.
+
+
+  <img src={home} alt="" height={450}/>
 */

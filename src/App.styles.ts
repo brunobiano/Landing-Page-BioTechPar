@@ -18,7 +18,7 @@ export const Header = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 140px;
+    height: 180px;
     position: fixed;
     top: 0;
     width: 100%;
@@ -39,7 +39,6 @@ export const Menu1 = styled.div`
 
 export const Logo = styled.div`
     padding-top: 10px;
-    padding-bottom: 10px;
     padding-left: 80px;
     margin-top: -10px;
 `;
@@ -48,7 +47,7 @@ export const MenuArea = styled.div`
     display: flex;
     align-items: center;
     margin-top: 10px;
-`; // talvez tirar margin top aqui Evandro
+`; // talvez tirar margin top aqui Evandro ----------------
 
 export const SectionHome = styled.section`
     height: 700px;
@@ -65,44 +64,34 @@ export const EnterpriseSection = styled.section`
     align-items: center;
     flex-direction: column;
     width: 100%;
-    height: 475px;
-    background-color: white;
-    margin-top: 100px;
-    padding-top: calc(50vh - 150px);
+    height: auto;
+    padding-top: calc(50vh - 300px);
 `;
 
 export const About = styled.div`
     margin-top: 60px;
     margin-left: 30px;
-    text-align: center;
     width: 900px;
 `;
 
 export const Traits = styled.div`
     margin-top: 60px;
-    margin-left: 30px;
+    margin-left: -40px;
 `;
 
 export const SectionTeam = styled.div`
-    height: 800px;
+    height: 700px;
     padding-top: calc(50vh - 250px);
     margin-top: calc(50vh - 250px);
 `;
 
-export const SectionAbout = styled.div`
+export const SectionRepresented = styled.div`
     display: flex;
     justify-content: center;
     width: 100%;
     height: 450px;
-    background-color: white;
     padding-top: calc(50vh - 275px);
 `;
-
-export const TextRight = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-`; // Tenho que trabalhar aqui no pos dos textos
 
 export const SectionServices = styled.div`
     display: flex;
@@ -110,7 +99,6 @@ export const SectionServices = styled.div`
     align-items: center;
     width: 100%;
     height: 700px;
-    background-color: white;
     padding-top: calc(50vh - 250px);
 `;
 

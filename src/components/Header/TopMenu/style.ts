@@ -1,18 +1,17 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60px;
+    height: 30px;
 `;
 
 export const LinkMenu = styled.div`
     display: flex;
     flex-direction: row;
-    font-size: 12px;
-    margin-top: 20px;
+    font-size: 14px;
+    margin-top: 5px;
 
     a {
         text-decoration: none;
@@ -26,5 +25,9 @@ export const LinkMenu = styled.div`
         vertical-align: middle;
         margin-right: 5px;
         margin-bottom: 2px;
+    }
+
+    .mailIcon {
+        padding-top: 3px;
     }
 `;
