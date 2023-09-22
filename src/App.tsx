@@ -2,7 +2,7 @@ import * as C from './App.styles';
 
 // Images
 import bioLogo from './assets/logo.png';
-import test from './assets/gif.gif';
+import BioTech from './assets/gif.gif';
 
 // Components - Header
 import { MenuList } from './components/Header/HeaderMenu';
@@ -15,6 +15,7 @@ import { TeamMembers } from './components/Team';
 import { RepEnterprises } from './components/Represented';
 import { Services } from './components/Job';
 import { ContactUs } from './components/Contact';
+import { ScrollImage } from './components/ScrollWhatsapp';
 
 const App = () => {
   return (
@@ -26,7 +27,7 @@ const App = () => {
         </C.Menu1>
         <C.HeaderArea>
           <C.Logo>
-            <a href="#"><img src={bioLogo} alt="" width={300}/></a>
+            <a href="#"><img src={bioLogo} alt="Logotipo do Meu Site"/></a>
           </C.Logo>
           <C.MenuArea>
             <MenuList />
@@ -34,8 +35,8 @@ const App = () => {
         </C.HeaderArea>
       </C.Header>
 
-      <C.SectionHome>
-        <img src={test} alt="" height={450}/>
+      <C.SectionHome id='home'>
+        <img src={BioTech} alt=""/>
       </C.SectionHome>
       
       <C.EnterpriseSection id='ourMission'>
@@ -65,10 +66,11 @@ const App = () => {
 
       <C.Footer>
         <div>
-          Desenvolvido por <a href="https://www.linkedin.com/in/brunobiano/" target='_blank'>Bruno Biano</a>.
-          <span>&copy; Bruno Biano. Todos os direitos reservados para BioTechPar.</span>
+          Desenvolvido por <a href="https://www.linkedin.com/in/brunobiano/" target='_blank' rel='noreferrer'>Bruno Biano</a>.
+          <span> <br /> &copy; Bruno Biano. Todos os direitos reservados para BioTechPar.</span>
         </div>
       </C.Footer>
+      <ScrollImage />
     </C.Container>
   </C.BodyContainer>
   );
@@ -81,6 +83,6 @@ export default App;
 /* 
   Botão criado em contactText vai virar um componente e talvez vai sair dessa area, na div de fora.
 
-
-  <img src={home} alt="" height={450}/>
+  após o backend pro botão, falta responsividade, acessibilidade (perguntar se o evandro quer após ver como faz),
+  fazer funcionar em outros navegadores além do chrome.
 */

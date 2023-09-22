@@ -19,7 +19,7 @@ export const MenuList = () => {
         <C.Container>
             <nav>
                 <C.Ul>
-                    <li className='line'><a href='#'><b>HOME</b></a></li>
+                    <li className='line'><a href='#home' onClick={(e) => handleMenuClick(e, 'home')}><b>HOME</b></a></li>
                     <li className='line'><a href='#ourMission' onClick={(e) => handleMenuClick(e, 'ourMission')}><b>SOBRE NÓS</b></a></li>
                     <li className='line'><a href='#team' onClick={(e) => handleMenuClick(e, 'team')}><b>EQUIPE</b></a></li>
                     <li className='line'><a href='#about' onClick={(e) => handleMenuClick(e, 'about')}><b>EMPRESAS REPRESENTADAS</b></a></li>

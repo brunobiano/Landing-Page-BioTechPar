@@ -30,4 +30,39 @@ export const LinkMenu = styled.div`
     .mailIcon {
         padding-top: 3px;
     }
+
+    
+    @media screen and (min-width: 320px) and (max-width: 760px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 10px;
+        width: 100vw;
+
+        @media screen and (min-width: 510px){
+            .phonePos {
+                padding-left: 200px
+            }
+        }
+        
+
+        a {
+            padding-top: 10px;
+        }
+
+        img {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 5px;
+            margin-bottom: 10px;
+        }
+
+        .mailIcon {
+            padding-top: 7px;
+        }
+        
+        .phoneHidden {
+            display: none;
+        }
+    }
 `;

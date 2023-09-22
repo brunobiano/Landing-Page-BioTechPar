@@ -10,5 +10,21 @@ export const Container = styled.div`
     h1 {
         text-align: center;
         color: #476C5E;
+        padding-bottom: 20px;
+    }
+
+    @media screen and (min-width: 320px) and (max-width: 760px) {
+        width: 100%;
+        text-align: justify; // center
+        font-size: 12px;
+        
+        p {
+            padding-top: 10px;
+        }
+
+        @media screen and (min-width: 480px) {
+            text-align: justify;
+            width: 470px;
+        }
     }
 `;

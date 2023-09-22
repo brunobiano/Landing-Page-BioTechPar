@@ -15,7 +15,7 @@ export const TeamMembers = () => {
                     <img src={director} alt="" className='teamPhoto'/>
                     <h4>Evandro Silva</h4>
                     <p>Fundador e Diretor Comercial <br/><br /></p>
-                    <a href="https://www.linkedin.com/in/evandrodasilva/" target='_blank'><img src={linkedin} alt="" width='50px'/></a>
+                    <a href="https://www.linkedin.com/in/evandrodasilva/" target='_blank' rel='noreferrer'><img className='phoneImg' src={linkedin} alt="" width='50px'/></a>
                 </C.Member>
 
                 <C.Member>

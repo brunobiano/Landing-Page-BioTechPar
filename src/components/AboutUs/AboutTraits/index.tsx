@@ -9,24 +9,24 @@ export const AboutUsTraits = () => {
         <C.Container>
             <p>
                 <img src={target} alt="" className='rotate-effect'/>
-                <strong>Missão: </strong> &nbsp;
+                <strong>Missão: </strong>
                 Resolver desafios enfrentados pelas representadas por meio
-                de atendimento personalizado com excelência e atenção <br/> &nbsp;
+                de atendimento personalizado com excelência e atenção <br/>
                 principalmente na intermediação da comunicação entre
                 fornecedores e clientes.
             </p>
             <p>
                 <img src={vision} alt="" className='rotate-effect'/>
-                <strong>&nbsp; &nbsp; Visão: </strong> &nbsp; &nbsp;
+                <strong>&nbsp; Visão: </strong>
                 Ser a principal referência no setor de biotecnologia
-                como representante das maiores e mais renomadas empresas <br /> &nbsp; &nbsp;
+                como representante das maiores e mais renomadas empresas <br />
                 deste segmento.
             </p>
             <p>
                 <img src={values} alt="" className='rotate-effect'/>
-                <strong>Valores: </strong> &nbsp;
+                <strong>Valores: </strong>
                 Integridade, inovação, transparência, ética, comprometimento,
-                responsabilidade, proatividade e principalmente respeito <br/> &nbsp;
+                responsabilidade, proatividade e principalmente <br /> respeito 
                 às normas e às pessoas.
             </p>
         </C.Container>

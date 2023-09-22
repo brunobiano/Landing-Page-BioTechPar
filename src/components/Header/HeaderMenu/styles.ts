@@ -11,6 +11,10 @@ export const Ul = styled.ul`
     padding: 0;
     display: flex;
 
+    @media screen and (min-width: 320px) and (max-width: 760px) {
+        display: none
+    }
+
     li {
         list-style: none;
         margin: 0;

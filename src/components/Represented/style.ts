@@ -6,6 +6,12 @@ export const Container = styled.div`
     align-items: center;
     justify-content: center;
     padding-top: 100px;
+
+    @media screen and (min-width: 320px) and (max-width: 760px) {
+        width: 100%;
+        height: auto;
+        padding-top: 0;
+    }
 `;
 
 export const Title = styled.div`
@@ -13,6 +19,10 @@ export const Title = styled.div`
     margin-top: -80px;
     margin-bottom: 80px;
     color: #476C5E;
+
+    @media screen and (min-width: 320px) and (max-width: 760px) {
+        margin-top: -140px;
+    }
 `;
 
 export const Body = styled.div`
@@ -29,5 +39,21 @@ export const Body = styled.div`
     p {
         width: 700px;
         line-height: 2.0;
+    }
+
+    @media screen and (min-width: 320px) and (max-width: 760px) {
+        
+        width: 100%;
+
+        img {
+            width: 300px;
+        }
+        
+        p {
+            font-size: 12px;
+            width: 90%;
+            padding-top: 20px;
+            text-align: justify;
+        }
     }
 `;
