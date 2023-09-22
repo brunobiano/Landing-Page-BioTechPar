@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Landing-Page-BioTechPar/static/css/main.b7dd3289.css",
-    "main.js": "/Landing-Page-BioTechPar/static/js/main.ad68b9d5.js",
+    "main.js": "/Landing-Page-BioTechPar/static/js/main.8b16de95.js",
     "static/js/787.71e672d5.chunk.js": "/Landing-Page-BioTechPar/static/js/787.71e672d5.chunk.js",
     "static/media/gif.gif": "/Landing-Page-BioTechPar/static/media/gif.6496b7924dd0aa4ab6a8.gif",
     "static/media/img2.jpg": "/Landing-Page-BioTechPar/static/media/img2.4fabddb60112f7b069d3.jpg",
@@ -14,11 +14,11 @@
     "static/media/whatsapp.png": "/Landing-Page-BioTechPar/static/media/whatsapp.f8ea87c3f0f8bb82c95b.png",
     "index.html": "/Landing-Page-BioTechPar/index.html",
     "main.b7dd3289.css.map": "/Landing-Page-BioTechPar/static/css/main.b7dd3289.css.map",
-    "main.ad68b9d5.js.map": "/Landing-Page-BioTechPar/static/js/main.ad68b9d5.js.map",
+    "main.8b16de95.js.map": "/Landing-Page-BioTechPar/static/js/main.8b16de95.js.map",
     "787.71e672d5.chunk.js.map": "/Landing-Page-BioTechPar/static/js/787.71e672d5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b7dd3289.css",
-    "static/js/main.ad68b9d5.js"
+    "static/js/main.8b16de95.js"
   ]
 }
