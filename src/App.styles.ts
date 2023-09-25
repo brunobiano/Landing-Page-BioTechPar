@@ -6,7 +6,6 @@ export const BodyContainer = styled.body`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
 `;
 
 export const Container = styled.div`
@@ -45,7 +44,7 @@ export const HeaderArea = styled.div`
         height: 75px;
         margin-top: 45px;
         margin-left: 0px;
-        display: flex;
+        display: none;
         justify-content: center;
     }
 `;

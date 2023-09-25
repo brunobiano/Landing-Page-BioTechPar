@@ -29,16 +29,27 @@ export const Members = styled.div`
 export const Member = styled.div`
     flex: 1;
     text-align: center;
+    height: auto;
 
-    @media screen and (min-width: 320px) and (max-width: 760px) {
-        margin-top: 40px;
+    h4 {
+        padding-top: 25px;
+    }
+
+    img {
+        width: 278px;
+        height: 305px;
     }
 
     a {
+        img {
+            width: 50px;
+            height: 50px;
+        }
+        
         display: inline-block;
         transition: background-color 1.0s;
-        width: 45px;
-        height: 40px;
+        width: 50px;
+        height: 50px;
     }
 
 
@@ -47,13 +58,15 @@ export const Member = styled.div`
     }
 
     .teamPhoto {
-        border-radius: 100px;
+        border-radius: 85px;
     }
 
     @media screen and (min-width: 320px) and (max-width: 760px) {
+        margin-top: 40px;
+        
         img {
             width: 200px;
-            height: 250px;
+            height: 225px;
         }
 
         .phoneImg {
