@@ -24,6 +24,7 @@ export const Header = styled.div`
     top: 0;
     width: 100%;
     background-color: #FFF;
+    z-index: 1;
 
     @media screen and (min-width: 320px) and (max-width: 760px) {
         display: flex;
@@ -98,13 +99,14 @@ export const MenuArea = styled.div`
 `;
 
 export const SectionHome = styled.section`
-    height: 700px;
+    height: auto;
     width: 100%;
 
     img {
         margin-top: 200px;
         width: 100%;
-        height: 450px;
+        height: 500px;
+        object-fit: cover;
     }
 
     @media screen and (min-width: 320px) and (max-width: 760px) {
@@ -178,7 +180,7 @@ export const SectionRepresented = styled.div`
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 450px;
+    height: auto;
     padding-top: calc(50vh - 250px);
 
     @media screen and (min-width: 320px) and (max-width: 760px) {
@@ -192,9 +194,9 @@ export const SectionServices = styled.div`
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 700px;
-    padding-top: calc(50vh - 250px);
-
+    height: 900px;
+    padding-top: calc(50vh - 280px);
+    
     @media screen and (min-width: 320px) and (max-width: 760px) {
         width: 100%;
         height: auto;

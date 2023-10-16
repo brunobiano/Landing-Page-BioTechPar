@@ -2,7 +2,7 @@ import * as C from './App.styles';
 
 // Images
 import bioLogo from './assets/logo.png';
-import BioTech from './assets/gif.gif';
+import BioTech from './assets/banner.gif';
 
 // Components - Header
 import { MenuList } from './components/Header/HeaderMenu';
