@@ -83,6 +83,6 @@ export default App;
 /* 
   Botão criado em contactText vai virar um componente e talvez vai sair dessa area, na div de fora.
 
-  após o backend pro botão, falta responsividade, acessibilidade (perguntar se o evandro quer após ver como faz),
+  falta responsividade, acessibilidade (perguntar se o evandro quer após ver como faz),
   fazer funcionar em outros navegadores além do chrome.
 */

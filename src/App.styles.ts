@@ -194,8 +194,8 @@ export const SectionServices = styled.div`
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 900px;
-    padding-top: calc(50vh - 280px);
+    height: auto;
+    padding-top: calc(50vh - 120px);
     
     @media screen and (min-width: 320px) and (max-width: 760px) {
         width: 100%;
