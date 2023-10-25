@@ -27,11 +27,11 @@ export const Services = () => {
     }
 
     const handleClickSubMenu = (submenuId: string) => {
-        setDetailedBottom(submenuId)
-        setIsExpanded(!isExpanded);
-
-        if (detailedBottom !== null) {
+        if (detailedBottom === submenuId) {
             setDetailedBottom(null);
+        } else {
+            setDetailedBottom(submenuId);
+            setIsExpanded(!isExpanded);
         }
     }
 
@@ -43,6 +43,13 @@ export const Services = () => {
         'Otimização',
         'Cursos'
     ];
+
+    const handleUlScroll = () => {
+        window.scrollTo({
+            top: 3250,
+            behavior: 'smooth'
+        })
+    }
     
     return(
         <C.Container>
@@ -57,6 +64,7 @@ export const Services = () => {
                         detailedBottom={detailedBottom}
                         handleClickSubMenu={handleClickSubMenu}
                         handleShowSubMenu={handleShowSubMenu}
+                        handleUlScroll={handleUlScroll}
                     />
                    ))} 
                 </C.Ul>
@@ -75,9 +83,12 @@ export const Services = () => {
 /*
     
 
-    Arrumar o + que vira - pra cada um separado (arrumar também que ao clicar em outro serviço os sinais ficam bagunçados)
     colocar o gif certo para cada item do menu que estiver aberto (provavel jogar a div onde ele está lado a lado com a div SubBottomDetailed)
     quando clicar na caixinha que não está aberta, a aberta fecha e abre a clicada (feito porém precisa de um efeitinho)
+    
     Deixar mais bonito
     (olhar CSSTransition)
+
+    gtxProteo mudar imagem (70/30 vai ter que ser alterado pra conseguir ler imagem)
+    colocar texto do Rna
 */

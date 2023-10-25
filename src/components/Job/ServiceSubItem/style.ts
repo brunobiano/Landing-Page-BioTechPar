@@ -4,17 +4,6 @@ export const subContainer = styled.div`
     width: 100%;
 `;
 
-export const SubUpper = styled.div`
-    height: 300px;
-    width: 100%;
-    padding-top: 30px;
-
-    img {
-        width: 100%;
-        height: 100%;
-    }
-`;
-
 export const SubBottom = styled.div`
     display: flex;
     align-items: start;
@@ -44,6 +33,17 @@ export const SubBottom = styled.div`
         padding: 0 20px;
         color: white;
         height: 50px;
+        transition: background-color 0.3s ease;
+    }
+
+    .submenu .subLine {
+        max-height: 60px;
+        overflow: hidden;
+        transition: max-height 2.3s ease-in-out;
+    }
+
+    .submenu .subLine.active {
+        max-height: 200px; 
     }
 
     .subLine:hover {
@@ -53,15 +53,54 @@ export const SubBottom = styled.div`
     .active {
         background-color: #476C5E;
     }
+`;
 
-    span {
-        transition: transform 0.2s ease-in-out;
+export const ServicesContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    ul {
+        margin-top: 40px;
     }
 `;
 
-export const SubBottomDetailed = styled.div`
+export const GifArea = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 1420px; //alterar aqui, margin left para voltar ao normal
+    padding-top: 0px; // era 30
+    margin-left: -140px; // caso manter, tem q mexer pra ficar responsivo
+    padding-bottom: 50px;
+
+    h2 {
+        color: #476C5E;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+`;
+
+export const SubBottomDetailed = styled.div`  
     display: flex;
     width: 100%;
+
+    .before-effect {  
+        display: flex;
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 4.3s ease-in-out;
+    }
+
+    .smoothExpansion {
+        max-height: 400px;
+    }
 
     img {
         width: 100%;
@@ -78,7 +117,7 @@ export const SubBottomDetailed = styled.div`
     }
 
     li {
-        padding-left: 50px;
+        padding-left: 20px;
         background-color: white;
     }
 
@@ -96,12 +135,11 @@ export const ImageContainer = styled.div`
     overflow: hidden;
 `;
 
-/*export const SubBottomDetailed = styled.div`
-    display: flex;
-    align-items: center;
-    width: 500px;
-    line-height: 2.8;
-    padding-left: 20px;
+/*.submenu .subLine {
+        
+        background-color: red;
+    }
 
-    
-`; */
+    .submenu .subLine.active {
+        max-height: 200px; 
+    } */
