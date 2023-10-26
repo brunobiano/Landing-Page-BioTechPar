@@ -5,14 +5,14 @@ import dkrypt from './assets/D-KRYPT - 1.png';
 import onco from './assets/GTX ONCO .png';
 import ngs from './assets/SEQUENCIAMENTO DE NOVA GERAÇÃO (NGS).png';
 
-import meta from './assets/METAGENOMICA - 1 .png';
+import meta from './assets/gtx-meta.png';
 
 import seqRna from './assets/SEQUENCIAMENTO DE RNA.png';
 import rna from './assets/GTX-RNA.png';
 
 import proteo from './assets/GTX-PROTEO.png';
 
-import pipeline from './assets/GTX-PIPELINE.png';
+import pipeline from './assets/pipeline.png';
 
 import cursos from './assets/CURSOS.png';
 
