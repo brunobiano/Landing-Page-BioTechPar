@@ -1,15 +1,9 @@
 {
   "files": {
     "main.css": "/Landing-Page-BioTechPar/static/css/main.b7dd3289.css",
-    "main.js": "/Landing-Page-BioTechPar/static/js/main.8a241d25.js",
+    "main.js": "/Landing-Page-BioTechPar/static/js/main.68f25193.js",
     "static/js/787.71e672d5.chunk.js": "/Landing-Page-BioTechPar/static/js/787.71e672d5.chunk.js",
-    "static/media/OTIMIZAÇÃO - GIF.gif": "/Landing-Page-BioTechPar/static/media/OTIMIZAÇÃO - GIF.36296c6f06cf1fd43454.gif",
-    "static/media/CURSOS - GIF.gif": "/Landing-Page-BioTechPar/static/media/CURSOS - GIF.3bff3226eb388a0fb2cd.gif",
     "static/media/banner.gif": "/Landing-Page-BioTechPar/static/media/banner.712e88718dca9d787868.gif",
-    "static/media/GENÔMICA - GIF.gif": "/Landing-Page-BioTechPar/static/media/GENÔMICA - GIF.78036b32d9cf45dd8213.gif",
-    "static/media/PROTEÔMICA - GIF.gif": "/Landing-Page-BioTechPar/static/media/PROTEÔMICA - GIF.1608c2d2f473bbadadd7.gif",
-    "static/media/METAGENOMICA - GIF.gif": "/Landing-Page-BioTechPar/static/media/METAGENOMICA - GIF.50dcbff22d79b62005dc.gif",
-    "static/media/TRANSCRIPTOMICA - GIF.gif": "/Landing-Page-BioTechPar/static/media/TRANSCRIPTOMICA - GIF.f22cee90c8af14c3d6a0.gif",
     "static/media/GTX-PIPELINE.png": "/Landing-Page-BioTechPar/static/media/GTX-PIPELINE.3fd020431c0144e62b50.png",
     "static/media/CURSOS.png": "/Landing-Page-BioTechPar/static/media/CURSOS.58f69ca3a9589453d346.png",
     "static/media/GTX ONCO .png": "/Landing-Page-BioTechPar/static/media/GTX ONCO .00d04ddcb7c6e8c880cf.png",
@@ -29,11 +23,11 @@
     "static/media/whatsapp.png": "/Landing-Page-BioTechPar/static/media/whatsapp.f8ea87c3f0f8bb82c95b.png",
     "index.html": "/Landing-Page-BioTechPar/index.html",
     "main.b7dd3289.css.map": "/Landing-Page-BioTechPar/static/css/main.b7dd3289.css.map",
-    "main.8a241d25.js.map": "/Landing-Page-BioTechPar/static/js/main.8a241d25.js.map",
+    "main.68f25193.js.map": "/Landing-Page-BioTechPar/static/js/main.68f25193.js.map",
     "787.71e672d5.chunk.js.map": "/Landing-Page-BioTechPar/static/js/787.71e672d5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b7dd3289.css",
-    "static/js/main.8a241d25.js"
+    "static/js/main.68f25193.js"
   ]
 }
