@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+interface ImageContainer {
+    width?: string;
+}
+
 export const subContainer = styled.div`
     width: 100%;
 `;
@@ -125,13 +129,17 @@ export const SubBottomDetailed = styled.div`
         list-style: square;
         width: 100%;
         padding-left: 30px;
+
+        li {
+            margin-top: -50px;
+            height: 100px;
+        }
     }
 
 `;
 
-export const ImageContainer = styled.div`
-    width: 30%;
-    position: relative;
+export const ImageContainer = styled.div<ImageContainer>`
+    width: ${(props) => props.width || '30%'};
     overflow: hidden;
 `;
 

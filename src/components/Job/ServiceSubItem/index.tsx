@@ -10,7 +10,7 @@ import meta from './assets/gtx-meta.png';
 import seqRna from './assets/SEQUENCIAMENTO DE RNA.png';
 import rna from './assets/GTX-RNA.png';
 
-import proteo from './assets/GTX-PROTEO.png';
+import proteo from './assets/teste.png';
 
 import pipeline from './assets/pipeline.png';
 
@@ -236,7 +236,7 @@ export const ServiceSubItem = ({ visibleSubMenu, detailedBottom, isExpanded, han
                                 GTx-Proteo {expandedItems['gtxProteo'] ? <span>—</span> : <span>⬇</span>}</li>
                             {detailedBottom === 'gtxProteo' && (
                                 <C.SubBottomDetailed>
-                                    <C.ImageContainer>
+                                    <C.ImageContainer width='55%'>
                                         <img src={proteo} alt="" />
                                     </C.ImageContainer>
                                     <ul>
