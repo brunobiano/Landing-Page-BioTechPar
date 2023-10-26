@@ -46,7 +46,7 @@ export const Services = () => {
 
     const handleUlScroll = () => {
         window.scrollTo({
-            top: 3250,
+            top: 2900,
             behavior: 'smooth'
         })
     }

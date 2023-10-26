@@ -1,25 +1,19 @@
 import * as C from './style';
 import { useEffect, useState } from 'react';
 
-import genomicaGif from './assets/GENÔMICA - GIF.gif'
 import dkrypt from './assets/D-KRYPT - 1.png';
 import onco from './assets/GTX ONCO .png';
 import ngs from './assets/SEQUENCIAMENTO DE NOVA GERAÇÃO (NGS).png';
 
-import metaGif from './assets/METAGENOMICA - GIF.gif';
 import meta from './assets/METAGENOMICA - 1 .png';
 
-import rnaGif from './assets/TRANSCRIPTOMICA - GIF.gif';
 import seqRna from './assets/SEQUENCIAMENTO DE RNA.png';
 import rna from './assets/GTX-RNA.png';
 
-import proteoGif from './assets/PROTEÔMICA - GIF.gif';
 import proteo from './assets/GTX-PROTEO.png';
 
-import pipelineGif from './assets/OTIMIZAÇÃO - GIF.gif';
 import pipeline from './assets/GTX-PIPELINE.png';
 
-import cursosGif from './assets/CURSOS - GIF.gif';
 import cursos from './assets/CURSOS.png';
 
 type Props = {
@@ -84,10 +78,9 @@ export const ServiceSubItem = ({ visibleSubMenu, detailedBottom, isExpanded, han
             <C.SubBottom>
                 {visibleSubMenu === 'Genômica' && (
                     <C.ServicesContainer>
-                        <C.GifArea>
+                        <C.TitleArea>
                             <h2>Genômica</h2>
-                            <img src={genomicaGif} alt='' />
-                        </C.GifArea>
+                        </C.TitleArea>
                         <ul className='submenu'>
                             <li className={detailedBottom === 'ngs' ? 'subLine active' : 'subLine'}
                                 onClick={() => {
@@ -97,17 +90,15 @@ export const ServiceSubItem = ({ visibleSubMenu, detailedBottom, isExpanded, han
                                 NGS (Sequenciamento de Nova Geração) {expandedItems['ngs'] ? <span>—</span> : <span>⬇</span>}</li>
                             {expandedItems['ngs'] && detailedBottom === 'ngs' && (
                                 <C.SubBottomDetailed>
-                                    <div className={detailedBottom === 'ngs' ? 'before-effect smoothExpansion' : 'before-effect'}>
-                                        <C.ImageContainer>
-                                            <img src={ngs} alt="" />
-                                        </C.ImageContainer>
-                                        <ul>
-                                            <li>➡ Sequenciamento de exoma completo</li>
-                                            <li>➡ Exoma clínico</li>
-                                            <li>➡ Painéis oncológicos</li>
-                                            <li>➡ Hotspots</li>
-                                        </ul>
-                                    </div>
+                                    <C.ImageContainer>
+                                        <img src={ngs} alt="" />
+                                    </C.ImageContainer>
+                                    <ul>
+                                        <li>➡ Sequenciamento de exoma completo</li>
+                                        <li>➡ Exoma clínico</li>
+                                        <li>➡ Painéis oncológicos</li>
+                                        <li>➡ Hotspots</li>
+                                    </ul>
                                 </C.SubBottomDetailed>
                             )}
                             <li className={detailedBottom === 'dkrypt' ? 'subLine active' : 'subLine'}
@@ -135,7 +126,7 @@ export const ServiceSubItem = ({ visibleSubMenu, detailedBottom, isExpanded, han
                                     handleExpandItem('onco')
                                 }}>
                                 GTx-Onco™ {expandedItems['onco'] ? <span>—</span> : <span>⬇</span>}</li>
-                            {detailedBottom === 'onco' && (
+                            {expandedItems['onco'] && detailedBottom === 'onco' && (
                                 <C.SubBottomDetailed>
                                     <C.ImageContainer>
                                         <img src={onco} alt="" />
@@ -156,10 +147,9 @@ export const ServiceSubItem = ({ visibleSubMenu, detailedBottom, isExpanded, han
 
                 {visibleSubMenu === 'Metagenômica' && (
                     <C.ServicesContainer>
-                        <C.GifArea>
+                        <C.TitleArea>
                             <h2>Metagenômica</h2>
-                            <img src={metaGif} alt='' />
-                        </C.GifArea>
+                        </C.TitleArea>
                         <ul className='submenu'>
                             <li className={detailedBottom === 'gtxMeta' ? 'subLine active' : 'subLine'}
                                 onClick={() => {
@@ -191,10 +181,9 @@ export const ServiceSubItem = ({ visibleSubMenu, detailedBottom, isExpanded, han
 
                 {visibleSubMenu === 'Transcriptômica' && (
                     <C.ServicesContainer>
-                        <C.GifArea>
+                        <C.TitleArea>
                             <h2>Transcriptômica</h2>
-                            <img src={rnaGif} alt='' />
-                        </C.GifArea>
+                        </C.TitleArea>
                         <ul className='submenu'>
                             <li className={detailedBottom === 'sequenciamento' ? 'subLine active' : 'subLine'}
                                 onClick={() => {
@@ -235,10 +224,9 @@ export const ServiceSubItem = ({ visibleSubMenu, detailedBottom, isExpanded, han
 
                 {visibleSubMenu === 'Proteômica' && (
                     <C.ServicesContainer>
-                        <C.GifArea>
+                        <C.TitleArea>
                             <h2>Proteômica</h2>
-                            <img src={proteoGif} alt='' />
-                        </C.GifArea>
+                        </C.TitleArea>
                         <ul className='submenu'>
                             <li className={detailedBottom === 'gtxProteo' ? 'subLine active' : 'subLine'}
                                 onClick={() => {
@@ -264,10 +252,9 @@ export const ServiceSubItem = ({ visibleSubMenu, detailedBottom, isExpanded, han
 
                 {visibleSubMenu === 'Otimização' && (
                     <C.ServicesContainer>
-                        <C.GifArea>
+                        <C.TitleArea>
                             <h2>Otimização</h2>
-                            <img src={pipelineGif} alt='' />
-                        </C.GifArea>
+                        </C.TitleArea>
                         <ul className='submenu'>
                             <li className={detailedBottom === 'gtxPipeline' ? 'subLine active' : 'subLine'}
                                 onClick={() => {
@@ -291,10 +278,9 @@ export const ServiceSubItem = ({ visibleSubMenu, detailedBottom, isExpanded, han
 
                 {visibleSubMenu === 'Cursos' && (
                     <C.ServicesContainer>
-                        <C.GifArea>
+                        <C.TitleArea>
                             <h2>Cursos</h2>
-                            <img src={cursosGif} alt='' />
-                        </C.GifArea>
+                        </C.TitleArea>
                         <ul className='submenu'>
                             <li className={detailedBottom === 'cursos' ? 'subLine active' : 'subLine'}
                                 onClick={() => {

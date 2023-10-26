@@ -8,7 +8,7 @@ export const SubBottom = styled.div`
     display: flex;
     align-items: start;
     width: 750px;
-    height: 650px;
+    height: 1000px;
     line-height: 3.0;
     font-size: 18px;
     cursor: pointer;
@@ -58,22 +58,22 @@ export const SubBottom = styled.div`
 export const ServicesContainer = styled.div`
     display: flex;
     flex-direction: column;
+    justify-content: top;
     width: 100%;
 
     ul {
-        margin-top: 40px;
+        margin-top: 50px;
     }
 `;
 
-export const GifArea = styled.div`
+export const TitleArea = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 400px;
-    width: 1420px; //alterar aqui, margin left para voltar ao normal
-    padding-top: 0px; // era 30
-    margin-left: -140px; // caso manter, tem q mexer pra ficar responsivo
+    height: 100px;
+    width: 100%;
+    padding-top: 10px; 
     padding-bottom: 50px;
 
     h2 {
@@ -90,7 +90,7 @@ export const SubBottomDetailed = styled.div`
     display: flex;
     width: 100%;
 
-    .before-effect {  
+    .before-effect {  // voltar se tiver que mexer na animação (com div envolvendo C.SubBottomDetailed)
         display: flex;
         width: 100%;
         max-height: 0;
@@ -98,8 +98,8 @@ export const SubBottomDetailed = styled.div`
         transition: max-height 4.3s ease-in-out;
     }
 
-    .smoothExpansion {
-        max-height: 400px;
+    .smoothExpansion { // voltar se tiver que mexer na animação
+        max-height: 400px; 
     }
 
     img {
