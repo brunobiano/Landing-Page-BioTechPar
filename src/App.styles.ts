@@ -201,7 +201,6 @@ export const SectionServices = styled.div`
     @media screen and (min-width: 320px) and (max-width: 760px) {
         width: 100%;
         height: auto;
-        padding-bottom: 150px;
     }
 `;
 

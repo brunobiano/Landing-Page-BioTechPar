@@ -28,11 +28,8 @@ export const Body = styled.div`
         font-size: 12px;
 
         ul {
-            width: 80%;
-        }
-
-        br {
-            display: none;
+            width: 100%;
+            height: 200px;
         }
     }
 `;
@@ -73,4 +70,42 @@ export const Ul = styled.ul`
     .line:hover::after {
         width: 100%;
     }
+
+    @media screen and (min-width: 320px) and (max-width: 760px) {
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+        font-size: 20px;
+        padding-right: 10px;
+
+        .line::after {
+            content: '';
+            position: absolute;
+            bottom: 0px;
+            top: 28px;
+            left: 50px;
+            width: 0;
+            height: 2px;
+            background-color: #476C5E;
+            transition: width 0.5s ease;
+        }
+
+        .line:hover::after {
+            width: 65%;
+            display: flex;
+            align-items: center;
+        }
+
+        .active {
+            border-bottom: 3px solid #476C5E;
+            position: relative;
+            left: 70px;
+            width: 50%;
+        }
+    }
+`;
+
+export const Teste = styled.div`
+    height: 600px; // 1000px
+    background-color: red;
 `;

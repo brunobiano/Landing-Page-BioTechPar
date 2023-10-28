@@ -158,7 +158,7 @@ export const ServiceSubItem = ({ visibleSubMenu, detailedBottom, isExpanded, han
                                 }}>
                                 GTx-Meta {expandedItems['gtxMeta'] ? <span>—</span> : <span>⬇</span>}</li>
                             {detailedBottom === 'gtxMeta' && (
-                                <C.SubBottomDetailed>
+                                <C.SubBottomDetailed height='90%'>
                                     <C.ImageContainer>
                                         <img src={meta} alt="" />
                                     </C.ImageContainer>

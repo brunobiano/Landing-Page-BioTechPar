@@ -45,10 +45,16 @@ export const Services = () => {
     ];
 
     const handleUlScroll = () => {
-        window.scrollTo({
-            top: 2900,
-            behavior: 'smooth'
-        })
+        const windowWidth = window.innerWidth;
+
+        const mobileScreenWidth = 760;
+
+        if (windowWidth > mobileScreenWidth) {
+            window.scrollTo({
+                top: 2900,
+                behavior: 'smooth'
+            })
+        }
     }
     
     return(
@@ -68,13 +74,15 @@ export const Services = () => {
                     />
                    ))} 
                 </C.Ul>
-                    <ServiceSubItem /*sub Menus: dkrypt, onco, etc... */
-                        visibleSubMenu={visibleSubMenu}
-                        detailedBottom={detailedBottom}
-                        isExpanded={isExpanded}
-                        handleShowSubMenu={handleShowSubMenu}
-                        handleClickSubMenu={handleClickSubMenu}
-                    />    
+                    <C.Teste>
+                        <ServiceSubItem /*sub Menus: dkrypt, onco, etc... */
+                            visibleSubMenu={visibleSubMenu}
+                            detailedBottom={detailedBottom}
+                            isExpanded={isExpanded}
+                            handleShowSubMenu={handleShowSubMenu}
+                            handleClickSubMenu={handleClickSubMenu}
+                        />    
+                    </C.Teste>
             </C.Body>
         </C.Container>
     );

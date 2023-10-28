@@ -41,6 +41,7 @@ export const Body = styled.div`
         line-height: 2.0;
         font-size: 14px;
         padding-top: 50px;
+        text-align: justify;
     }
 
     @media screen and (min-width: 320px) and (max-width: 760px) {

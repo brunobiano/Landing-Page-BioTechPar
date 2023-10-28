@@ -11,6 +11,10 @@ export const Container = styled.div`
     flex-direction: row;
     align-items: center;
 
+    img:hover {
+        transform: scale(1.2);
+    }
+
     img {
         width: 75px;
         height: 75px;

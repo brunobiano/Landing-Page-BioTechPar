@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 interface ImageContainer {
     width?: string;
+    height?: string;
 }
 
 export const subContainer = styled.div`
@@ -56,6 +57,11 @@ export const SubBottom = styled.div`
 
     .active {
         background-color: #476C5E;
+    } 
+
+    @media screen and (min-width: 320px) and (max-width: 760px) {
+        padding-top: 50px;
+        font-size: 14px;
     }
 `;
 
@@ -67,6 +73,16 @@ export const ServicesContainer = styled.div`
 
     ul {
         margin-top: 50px;
+    }
+
+    @media screen and (min-width: 320px) and (max-width: 760px) {
+        display: flex;
+        justify-content: center;
+
+        ul {
+            margin-top: 0px;
+            height: 400px;
+        }
     }
 `;
 
@@ -88,9 +104,13 @@ export const TitleArea = styled.div`
         width: 100%;
         height: 100%;
     }
+
+    @media screen and (min-width: 320px) and (max-width: 760px) {
+        padding-top: 0px;
+    }
 `;
 
-export const SubBottomDetailed = styled.div`  
+export const SubBottomDetailed = styled.div<ImageContainer>`  
     display: flex;
     width: 100%;
 
@@ -108,7 +128,7 @@ export const SubBottomDetailed = styled.div`
 
     img {
         width: 100%;
-        height: 100%;
+        height: ${(props) => props.height || '100%'};
         transition: transform 0.2s ease-in-out;
     }
 
@@ -132,7 +152,17 @@ export const SubBottomDetailed = styled.div`
 
         li {
             margin-top: -50px;
-            height: 100px;
+            margin-bottom: 40px;
+            height: 50px;
+        }
+    }
+
+    @media screen and (min-width: 320px) and (max-width: 760px) {
+        flex-direction: column;
+
+        ul {
+            width: 100%;
+            padding-top: 20px;
         }
     }
 
@@ -141,13 +171,8 @@ export const SubBottomDetailed = styled.div`
 export const ImageContainer = styled.div<ImageContainer>`
     width: ${(props) => props.width || '30%'};
     overflow: hidden;
-`;
 
-/*.submenu .subLine {
-        
-        background-color: red;
+    @media screen and (min-width: 320px) and (max-width: 760px) {
+        width: 100%;
     }
-
-    .submenu .subLine.active {
-        max-height: 200px; 
-    } */
+`;

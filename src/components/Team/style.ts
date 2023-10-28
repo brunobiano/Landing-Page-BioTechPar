@@ -37,7 +37,7 @@ export const Member = styled.div`
 
     img {
         width: 278px;
-        height: 305px;
+        height: 295px;
     }
 
     a {
