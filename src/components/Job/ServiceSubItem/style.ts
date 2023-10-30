@@ -62,6 +62,10 @@ export const SubBottom = styled.div`
     @media screen and (min-width: 320px) and (max-width: 760px) {
         padding-top: 50px;
         font-size: 14px;
+
+        .subLine {
+            padding-top: 3px;
+        }
     }
 `;
 
@@ -114,18 +118,6 @@ export const SubBottomDetailed = styled.div<ImageContainer>`
     display: flex;
     width: 100%;
 
-    .before-effect {  // voltar se tiver que mexer na animação (com div envolvendo C.SubBottomDetailed)
-        display: flex;
-        width: 100%;
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 4.3s ease-in-out;
-    }
-
-    .smoothExpansion { // voltar se tiver que mexer na animação
-        max-height: 400px; 
-    }
-
     img {
         width: 100%;
         height: ${(props) => props.height || '100%'};
@@ -164,6 +156,10 @@ export const SubBottomDetailed = styled.div<ImageContainer>`
             width: 100%;
             padding-top: 20px;
         }
+
+        .subBranch {
+            padding-top: 30px;
+        }
     }
 
 `;
@@ -176,3 +172,17 @@ export const ImageContainer = styled.div<ImageContainer>`
         width: 100%;
     }
 `;
+
+/*
+
+    .before-effect {  // voltar se tiver que mexer na animação (com div envolvendo C.SubBottomDetailed)
+        display: flex;
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 4.3s ease-in-out;
+    }
+
+    .smoothExpansion { // voltar se tiver que mexer na animação
+        max-height: 400px; 
+    } */

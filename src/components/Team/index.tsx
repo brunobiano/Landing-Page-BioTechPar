@@ -19,7 +19,7 @@ export const TeamMembers = () => {
                 </C.Member>
 
                 <C.Member>
-                    <img src={associate} alt="" className='teamPhoto' width={278} height={315}/>
+                    <img src={associate} alt="" className='teamPhoto' />
                     <h4>Karoline Milani</h4>
                     <p>Sócia e Diretora Administrativa, Financeira e Jurídica</p><br />
                 </C.Member>

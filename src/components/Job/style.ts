@@ -71,7 +71,7 @@ export const Ul = styled.ul`
         width: 100%;
     }
 
-    @media screen and (min-width: 320px) and (max-width: 760px) {
+    @media screen and (min-width: 320px) and (max-width: 350px) {
         display: grid;
         grid-template-columns: 1fr;
         text-align: center;
@@ -80,32 +80,64 @@ export const Ul = styled.ul`
 
         .line::after {
             content: '';
-            position: absolute;
+            position: static;
             bottom: 0px;
-            top: 28px;
-            left: 50px;
+            top: 0;
+            left: 0;
             width: 0;
-            height: 2px;
-            background-color: #476C5E;
+            height: 0px;
             transition: width 0.5s ease;
         }
 
         .line:hover::after {
-            width: 65%;
-            display: flex;
+            width: 0;
+            display: none;
             align-items: center;
         }
 
         .active {
-            border-bottom: 3px solid #476C5E;
-            position: relative;
-            left: 70px;
-            width: 50%;
+            text-decoration: underline;
+            border-bottom: none;
+            font-size: 22px;
+        }
+    }
+
+    @media screen and (min-width: 350px) and (max-width: 760px) {
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+        font-size: 20px;
+        padding-right: 10px;
+
+        .line::after {
+            content: '';
+            position: static;
+            bottom: 0px;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 0px;
+            transition: width 0.5s ease;
+        }
+
+        .line:hover::after {
+            width: 0;
+            display: none;
+            align-items: center;
+        }
+
+        .active {
+            text-decoration: underline;
+            border-bottom: none;
+            font-size: 22px;
         }
     }
 `;
 
-export const Teste = styled.div`
-    height: 600px; // 1000px
-    background-color: red;
+export const SubServicesArea = styled.div`
+    height: 800px;
+
+    @media screen and (min-width: 320px) and (max-width: 760px) {
+        height: 700px;
+    }
 `;

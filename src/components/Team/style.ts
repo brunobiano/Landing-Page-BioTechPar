@@ -29,7 +29,6 @@ export const Members = styled.div`
 export const Member = styled.div`
     flex: 1;
     text-align: center;
-    height: auto;
 
     h4 {
         padding-top: 25px;
@@ -37,7 +36,7 @@ export const Member = styled.div`
 
     img {
         width: 278px;
-        height: 295px;
+        height: 300px;
     }
 
     a {
@@ -66,7 +65,7 @@ export const Member = styled.div`
         
         img {
             width: 200px;
-            height: 225px;
+            height: 215px;
         }
 
         .phoneImg {

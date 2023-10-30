@@ -114,7 +114,7 @@ export const SectionHome = styled.section`
         max-width: 100%;
 
         img {
-            margin-top: 200px;
+            margin-top: 150px;
             width: 100%;
             height: auto;
         }
