@@ -25,12 +25,15 @@ export const Body = styled.div`
 
     @media screen and (min-width: 320px) and (max-width: 760px) {
         width: 100%;
-        font-size: 12px;
 
         ul {
             width: 100%;
             height: 200px;
         }
+    }
+
+    @media screen and (min-width: 761px) and (max-width: 1024px) {
+        width: 95%;
     }
 `;
 
@@ -139,5 +142,9 @@ export const SubServicesArea = styled.div`
 
     @media screen and (min-width: 320px) and (max-width: 760px) {
         height: 700px;
+    }
+
+    @media screen and (min-width: 761px) and (max-width: 1024px) {
+        height: 800px; // mexer aqui depois de alterar dkrypt
     }
 `;

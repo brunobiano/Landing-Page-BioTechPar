@@ -86,6 +86,10 @@ export const Logo = styled.div`
             padding-bottom: 30px;
        }
     }
+
+    @media screen and (min-width: 761px) and (max-width: 1024px) {
+        width: 200px;
+    }
 `;
 
 export const MenuArea = styled.div`
@@ -93,8 +97,16 @@ export const MenuArea = styled.div`
     align-items: center;
     margin-top: 10px;
 
+    .menu-opener {
+        display: none;
+    }
+
     @media screen and (min-width: 320px) and (max-width: 760px) {
         font-size: 8px;
+    }
+
+    @media screen and (min-width: 761px) and (max-width: 1024px) {
+        
     }
 `;
 
@@ -147,6 +159,11 @@ export const About = styled.div`
             font-size: 12px;
         }
     }
+
+    @media screen and (min-width: 761px) and (max-width: 1024px) {
+        margin-left: 0px;
+        width: 90%;
+    }
 `;
 
 export const Traits = styled.div`
@@ -157,6 +174,11 @@ export const Traits = styled.div`
         display: flex;
         justify-content: center;
         align-items: center;
+        width: 90%;
+        margin-left: 0px;
+    }
+
+    @media screen and (min-width: 761px) and (max-width: 1024px) {
         width: 90%;
         margin-left: 0px;
     }
@@ -187,6 +209,11 @@ export const SectionRepresented = styled.div`
         width: 100%;
         height: 550px;
     }
+
+    @media screen and (min-width: 761px) and (max-width: 1024px) {
+        width: 100%;
+        height: auto;
+    }
 `;
 
 export const SectionServices = styled.div`
@@ -212,6 +239,11 @@ export const Contact = styled.div`
     @media screen and (min-width: 320px) and (max-width: 760px) {
         height: auto;
         width: 100%;
+        margin-top: 100px; // tirar aqui caso bigode
+    }
+
+    @media screen and (min-width: 761px) and (max-width: 1024px){
+        height: auto;
     }
 `;
 

@@ -3,6 +3,7 @@ import styled from "styled-components";
 interface ImageContainer {
     width?: string;
     height?: string;
+    fontSize?: string;
 }
 
 export const subContainer = styled.div`
@@ -41,7 +42,7 @@ export const SubBottom = styled.div`
         transition: background-color 0.3s ease;
     }
 
-    .submenu .subLine {
+    .submenu .subLine { // o problema do dkrypt pode estar aqui
         max-height: 60px;
         overflow: hidden;
         transition: max-height 2.3s ease-in-out;
@@ -85,7 +86,14 @@ export const ServicesContainer = styled.div`
 
         ul {
             margin-top: 0px;
-            height: 400px;
+            height: auto; // ta com defeito aqui no D-Krypt
+        }
+    }
+
+    @media screen and (min-width: 761px) and (max-width: 1024px) {
+        ul {
+            margin-top: 0px;
+            height: 280px;
         }
     }
 `;
@@ -102,11 +110,6 @@ export const TitleArea = styled.div`
 
     h2 {
         color: #476C5E;
-    }
-
-    img {
-        width: 100%;
-        height: 100%;
     }
 
     @media screen and (min-width: 320px) and (max-width: 760px) {
@@ -151,6 +154,7 @@ export const SubBottomDetailed = styled.div<ImageContainer>`
 
     @media screen and (min-width: 320px) and (max-width: 760px) {
         flex-direction: column;
+        font-size: ${(props) => props.fontSize || '14px'};
 
         ul {
             width: 100%;
@@ -162,6 +166,18 @@ export const SubBottomDetailed = styled.div<ImageContainer>`
         }
     }
 
+    @media screen and (min-width: 761px) and (max-width: 1024px) {
+        flex-direction: row;
+        font-size: 15px;
+
+        img {
+            height: 100%;
+        }
+
+        .subBranch {
+            padding-top: 30px;
+        }
+    }
 `;
 
 export const ImageContainer = styled.div<ImageContainer>`

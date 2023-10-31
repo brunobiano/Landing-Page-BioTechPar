@@ -63,6 +63,16 @@ export const LeftSide = styled.div`
             padding-left: 0px;
         }
     }
+
+    @media screen and (min-width: 761px) and (max-width: 1024px) {
+        font-size: 14px;
+        padding: 10px;
+        width: 48%;
+
+        .bottom-left {
+            padding-left: 40px;
+        }
+    }
 `;
 
 export const OurContacts = styled.div`
@@ -76,6 +86,12 @@ export const OurContacts = styled.div`
         align-items: center;
         width: 290px;
         margin-top: 20px;
+    }
+
+    @media screen and (min-width: 761px) and (max-width: 1024px) {
+        font-size: 22px;
+        margin-top: 0;
+        margin-left: -30px;
     }
 `;
 
@@ -95,6 +111,15 @@ export const Title = styled.div`
         width: 100%;
         justify-content: center;
         margin-left: 0px;
+    }
+
+    @media screen and (min-width: 761px) and (max-width: 1024px) {
+        width: 100%;
+        margin-left: 30px;
+
+        img {
+            width: 35px;
+        }
     }
 `;
 
@@ -119,6 +144,17 @@ export const Body = styled.div`
 
         .telephoneP {
             margin-left: 0px;
+        }
+    }
+
+    @media screen and (min-width: 761px) and (max-width: 1024px) {
+        p {
+            font-size: 22px;
+            margin-left: 65px;
+        }
+
+        .telephoneP {
+            margin-left: 100px;
         }
     }
 `;

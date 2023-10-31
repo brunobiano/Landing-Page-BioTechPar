@@ -38,10 +38,10 @@ export const ServiceSubItem = ({ visibleSubMenu, detailedBottom, isExpanded, han
     });
 
     const handleExpandItem = (itemName: string) => {
-        // Crie uma cópia do objeto de estado atual
+        // Criando uma cópia do objeto de estado atual
         const newExpandedItems = { ...expandedItems };
 
-        // Verifique se o item atual já está expandido
+        // Verificando se o item atual já está expandido
         if (newExpandedItems[itemName]) {
             // Se estiver expandido, recolha-o
             newExpandedItems[itemName] = false;
@@ -55,7 +55,7 @@ export const ServiceSubItem = ({ visibleSubMenu, detailedBottom, isExpanded, han
             newExpandedItems[itemName] = true;
         }
 
-        // Atualize o estado
+        // Atualizando o estado
         setExpandedItems(newExpandedItems);
     };
 
@@ -158,7 +158,7 @@ export const ServiceSubItem = ({ visibleSubMenu, detailedBottom, isExpanded, han
                                 }}>
                                 GTx-Meta {expandedItems['gtxMeta'] ? <span>—</span> : <span>⬇</span>}</li>
                             {detailedBottom === 'gtxMeta' && (
-                                <C.SubBottomDetailed height='90%'>
+                                <C.SubBottomDetailed height='90%' fontSize='12px'>
                                     <C.ImageContainer>
                                         <img src={meta} alt="" />
                                     </C.ImageContainer>
@@ -268,7 +268,7 @@ export const ServiceSubItem = ({ visibleSubMenu, detailedBottom, isExpanded, han
                                         <img src={pipeline} alt='' />
                                     </C.ImageContainer>
                                     <ul>
-                                        <li>➡ Desenvolvimento e otimização de softwares de bioinformática desenvolvidos pela sua empresa</li>
+                                        <li>➡ Desenvolvimento e otimização de softwares de Bioinformática desenvolvidos pela sua empresa</li>
                                     </ul>
                                 </C.SubBottomDetailed>
                             )}
@@ -294,8 +294,8 @@ export const ServiceSubItem = ({ visibleSubMenu, detailedBottom, isExpanded, han
                                         <img src={cursos} alt="" />
                                     </C.ImageContainer>
                                     <ul>
-                                        <li>➡ Introdução à bioinformática</li>
-                                        <li>➡ Demais tópicos relacionados à bioinformática</li>
+                                        <li>➡ Introdução à Bioinformática</li>
+                                        <li>➡ Demais tópicos relacionados à Bioinformática</li>
                                     </ul>
                                 </C.SubBottomDetailed>
                             )}

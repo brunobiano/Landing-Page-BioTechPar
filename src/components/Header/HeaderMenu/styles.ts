@@ -3,6 +3,32 @@ import styled from "styled-components";
 export const Container = styled.div`
     margin-right: 30px;
     margin-top: -25px;
+
+    nav {
+        display: block;
+    }
+
+    @media screen and (min-width: 761px) and (max-width: 1024px) {
+        nav {
+            display: none;
+            position: absolute;
+            z-index: 99;
+            height: calc(100vh - 300px);
+            background-color: rgba(255, 255, 255, 0.8);
+            width: 40vw;
+            top: 115px;
+            right: 0;
+
+            ul {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        .menu-opener {
+            display: block;
+        }
+    }
 `;
 
 export const Ul = styled.ul`
@@ -10,10 +36,6 @@ export const Ul = styled.ul`
     margin: 0;
     padding: 0;
     display: flex;
-
-    @media screen and (min-width: 320px) and (max-width: 760px) {
-        display: none
-    }
 
     li {
         list-style: none;
@@ -45,5 +67,9 @@ export const Ul = styled.ul`
 
     .line:hover::after {
         width: 100%;
+    }
+
+    @media screen and (min-width: 320px) and (max-width: 760px) {
+        display: none
     }
 `;

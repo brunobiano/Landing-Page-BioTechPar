@@ -45,7 +45,6 @@ export const Body = styled.div`
     }
 
     @media screen and (min-width: 320px) and (max-width: 760px) {
-        
         width: 100%;
 
         img {

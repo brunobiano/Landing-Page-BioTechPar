@@ -33,7 +33,7 @@ export const Container = styled.div`
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 12px; // talvez colocar wid 90 per cent aqui
+        font-size: 12px;
         
         p {
             display: flex;
@@ -56,6 +56,24 @@ export const Container = styled.div`
             br {
                 display: none;
             }
+        }
+    }
+
+    @media screen and (min-width: 761px) and (max-width: 1024px) {
+        p {
+            display: flex;
+            flex-direction: column;
+            text-align: justify;
+            align-items: center;
+            line-height: 2.0;
+        }
+
+        img {
+            margin-top: 30px;
+        }
+
+        br {
+            display: none;
         }
     }
 `;

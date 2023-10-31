@@ -45,13 +45,15 @@ export const Services = () => {
     ];
 
     const handleUlScroll = () => {
-        const windowWidth = window.innerWidth;
 
-        const mobileScreenWidth = 760;
-
-        if (windowWidth > mobileScreenWidth) {
+        if (window.innerWidth > 1024) {
             window.scrollTo({
-                top: 2900,
+                top: 2850,
+                behavior: 'smooth'
+            })
+        } else {
+            window.scrollTo({
+                top: 3200,
                 behavior: 'smooth'
             })
         }

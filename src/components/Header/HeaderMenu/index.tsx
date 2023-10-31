@@ -1,23 +1,69 @@
 import * as C from './styles';
+import { useState, useEffect } from 'react';
+
+import menuOpener from './assets/menu.png'
 
 export const MenuList = () => {    
+    const isInitialNavVisible = window.innerWidth > 1024;
+    const [navVisible, setNavVisible] = useState(isInitialNavVisible);
+    
     const handleMenuClick = (event: React.MouseEvent, sectionId: string) => {
         event.preventDefault();
         const section = document.getElementById(sectionId);
         if (section) {
             const headerHeight = document.querySelector('.Header')?.clientHeight || 0;
-            const targetPosition = section.offsetTop - headerHeight;
-            const scrollToPosition = targetPosition - 50;
+            let scrollToPosition;
+
+            const screenWidth = window.innerWidth;
+    
+            if (screenWidth > 1024) {
+                // Tela maior que 1024px: Scroll para a posição original - 50
+                scrollToPosition = section.offsetTop - headerHeight - 50;
+            } else if (screenWidth >= 761) {
+                // Tela entre 761px e 1024px: Scroll para uma posição diferente
+                scrollToPosition = section.offsetTop - headerHeight - 150;
+            } else {
+                // Tela menor que 761px: Scroll para uma posição diferente
+                scrollToPosition = section.offsetTop - headerHeight - 150;
+            }
+
             window.scrollTo({
                 top: scrollToPosition,
                 behavior: 'smooth',
             })
         }
+
+        if (window.innerWidth < 1024) { // qualquer posível bug com o nav eu mexo aqui
+            setNavVisible(false)
+        }
     }
+
+    const handleToggleNav = () => {
+        setNavVisible(!navVisible)
+    }
+
+    useEffect(() => {
+        const handleResize = () => {
+          if (window.innerWidth > 1024) {
+            setNavVisible(true); // Controlar o estado até 1024px
+          } else if (window.innerWidth > 761){
+            setNavVisible(false); // Desativar o controle acima de 1024px
+          }
+        };
+    
+        // Ouvinte de redimensionamento para monitorar a largura da janela
+        window.addEventListener('resize', handleResize);
+    
+        // Removendo ouvinte ao desmontar o componente
+        return () => {
+          window.removeEventListener('resize', handleResize);
+        };
+    }, []);
     
     return (
         <C.Container>
-            <nav>
+            <img src={menuOpener} alt="" className='menu-opener' onClick={handleToggleNav}/>
+            <nav style={{display: navVisible ? 'block' : 'none'}}>
                 <C.Ul>
                     <li className='line'><a href='#home' onClick={(e) => handleMenuClick(e, 'home')}><b>HOME</b></a></li>
                     <li className='line'><a href='#ourMission' onClick={(e) => handleMenuClick(e, 'ourMission')}><b>SOBRE NÓS</b></a></li>
@@ -30,3 +76,17 @@ export const MenuList = () => {
         </C.Container>
     )
 };
+
+/*
+    função handleMenuClick talvez tenha q fechar o nav novamente
+
+    if (section) {
+            const headerHeight = document.querySelector('.Header')?.clientHeight || 0;
+            const targetPosition = section.offsetTop - headerHeight;
+            const scrollToPosition = targetPosition - 50;
+            window.scrollTo({
+                top: scrollToPosition,
+                behavior: 'smooth',
+            })
+    } voltar caso perigo!!!
+*/
