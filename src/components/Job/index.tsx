@@ -1,5 +1,6 @@
-import { ServiceItem } from './ServiceItem';
+import { ServiceItem } from './ServiceUl';
 import { ServiceSubItem } from './ServiceSubItem';
+import { Testing } from './TestingSumary';
 import * as C from './style';
 
 import { useState } from 'react';
@@ -48,12 +49,12 @@ export const Services = () => {
 
         if (window.innerWidth > 1024) {
             window.scrollTo({
-                top: 2850,
+                top: 2950,
                 behavior: 'smooth'
             })
         } else {
             window.scrollTo({
-                top: 3200,
+                top: 3300,
                 behavior: 'smooth'
             })
         }
@@ -77,13 +78,13 @@ export const Services = () => {
                    ))} 
                 </C.Ul>
                     <C.SubServicesArea>
-                        <ServiceSubItem /*sub Menus: dkrypt, onco, etc... */
+                          <ServiceSubItem 
                             visibleSubMenu={visibleSubMenu}
                             detailedBottom={detailedBottom}
                             isExpanded={isExpanded}
-                            handleShowSubMenu={handleShowSubMenu}
                             handleClickSubMenu={handleClickSubMenu}
-                        />    
+                            handleShowSubMenu={handleShowSubMenu}
+                          />
                     </C.SubServicesArea>
             </C.Body>
         </C.Container>
@@ -101,4 +102,12 @@ export const Services = () => {
 
     gtxProteo mudar imagem (70/30 vai ter que ser alterado pra conseguir ler imagem)
     colocar texto do Rna
+
+    <ServiceSubItem /*sub Menus: dkrypt, onco, etc... 
+    visibleSubMenu={visibleSubMenu}
+    detailedBottom={detailedBottom}
+    isExpanded={isExpanded}
+    handleShowSubMenu={handleShowSubMenu}
+    handleClickSubMenu={handleClickSubMenu}
+    />  
 */

@@ -10,6 +10,7 @@ export const Container = styled.div`
         align-items: top;
         line-height: 1.5;
         text-align: left;
+        padding-bottom: 20px;
     }
     strong {
         margin-left: -10px;

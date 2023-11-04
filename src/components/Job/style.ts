@@ -28,7 +28,7 @@ export const Body = styled.div`
 
         ul {
             width: 100%;
-            height: 200px;
+            height: auto;
         }
     }
 

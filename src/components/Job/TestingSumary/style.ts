@@ -7,19 +7,23 @@ interface ImageContainer {
 }
 
 export const subContainer = styled.div`
-    width: 100%;
+    width: 100%;  
 `;
 
-export const SubBottom = styled.div`
+export const subBottom = styled.div`
     display: flex;
     align-items: start;
-    width: 750px;
+    width: 100%;
+    height: 1000px;
     line-height: 3.0;
     font-size: 18px;
     cursor: pointer;
-    width: 100%;
     padding-top: 100px; // talvez mexer aqui
     font-weight: bold;
+    
+    details {   
+        width: 100%;
+    }
 
     li {
         display: flex;
@@ -28,7 +32,6 @@ export const SubBottom = styled.div`
     }
 
     .submenu {
-        display: block;
         width: 100%;
     }
 
@@ -48,6 +51,12 @@ export const SubBottom = styled.div`
     .active {
         background-color: #476C5E;
     } 
+
+    details {
+        summary {
+            display: none;
+        }
+    }
 
     @media screen and (min-width: 320px) and (max-width: 760px) {
         padding-top: 50px;
@@ -115,17 +124,21 @@ export const SubBottomDetailed = styled.div<ImageContainer>`
     display: flex;
     width: 100%;
 
+    .image-details {
+        width: 30%;
+    }
+
     img {
         width: 100%;
         height: ${(props) => props.height || '100%'};
-        transition: transform 0.2s ease-in-out; 
+        transition: transform 0.2s ease-in-out;
     }
 
     img:hover {
         transform: scale(1.2);
     }
 
-    ul {
+    .image-details ul {
         width: 70%;
     }
 
@@ -152,7 +165,7 @@ export const SubBottomDetailed = styled.div<ImageContainer>`
 
         ul {
             width: 100%;
-            padding-top: 20px; 
+            padding-top: 20px;
         }
 
         .subBranch {
