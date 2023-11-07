@@ -89,3 +89,5 @@ export const MenuList = () => {
         </C.Container>
     )
 };
+
+/*tente diminuuir a altura em modo de celular e teste os botoes*/

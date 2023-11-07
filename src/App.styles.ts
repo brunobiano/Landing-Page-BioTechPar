@@ -146,6 +146,10 @@ export const EnterpriseSection = styled.section`
     @media screen and (min-width: 320px) and (max-width: 760px) {
         padding-top: 0px;
     }
+
+    @media screen and (min-width: 1200px) and (max-width: 1439px) {
+        padding-top: calc(50vh - 200px);
+    }
 `;
 
 export const About = styled.div`
@@ -198,6 +202,10 @@ export const SectionTeam = styled.div`
         align-items: center;
         padding-top: calc(50vh - 300px);
     }
+
+    @media screen and (min-width: 1200px) and (max-width: 1439px) {
+        padding-top: calc(50vh - 100px);
+    }
 `;
 
 export const SectionRepresented = styled.div`
@@ -246,6 +254,10 @@ export const Contact = styled.div`
 
     @media screen and (min-width: 761px) and (max-width: 1024px){
         height: auto;
+    }
+
+    @media screen and (min-width: 1200px) and (max-width: 1439px) {
+        padding-top: calc(20vh - 100px);
     }
 `;
 
