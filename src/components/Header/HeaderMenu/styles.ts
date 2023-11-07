@@ -8,6 +8,34 @@ export const Container = styled.div`
         display: block;
     }
 
+    @media screen and (min-width: 320px) and (max-width: 760px) {
+        margin-top: -20px;
+
+        nav {
+            display: none;
+            position: absolute;
+            z-index: 99;
+            height: calc(100vh - 300px);
+            background-color: rgba(255, 255, 255, 0.8);
+            width: 90vw;
+            top: 115px;
+            right: 0;
+            font-size: 16px;
+
+            ul {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        .menu-opener {
+            display: block;
+            position: absolute;
+            right: 10px;
+            top: 65px;
+        }
+    }
+
     @media screen and (min-width: 761px) and (max-width: 1024px) {
         nav {
             display: none;
@@ -18,6 +46,7 @@ export const Container = styled.div`
             width: 40vw;
             top: 115px;
             right: 0;
+            font-size: 16px;
 
             ul {
                 display: flex;
@@ -67,9 +96,5 @@ export const Ul = styled.ul`
 
     .line:hover::after {
         width: 100%;
-    }
-
-    @media screen and (min-width: 320px) and (max-width: 760px) {
-        display: none
     }
 `;

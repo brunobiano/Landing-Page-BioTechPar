@@ -45,7 +45,7 @@ export const HeaderArea = styled.div`
         height: 75px;
         margin-top: 45px;
         margin-left: 0px;
-        display: none;
+        display: block;
         justify-content: center;
     }
 `;
@@ -82,6 +82,7 @@ export const Logo = styled.div`
         width: 200px;
         
         img {
+            display: none;
             width: 200px;
             padding-bottom: 30px;
        }
@@ -186,7 +187,7 @@ export const Traits = styled.div`
 
 export const SectionTeam = styled.div`
     height: 700px;
-    padding-top: calc(50vh - 250px);
+    padding-top: calc(50vh - 240px);
     margin-top: calc(50vh - 250px);
 
     @media screen and (min-width: 320px) and (max-width: 760px) {
@@ -203,7 +204,7 @@ export const SectionRepresented = styled.div`
     justify-content: center;
     width: 100%;
     height: auto;
-    padding-top: calc(50vh - 250px);
+    padding-top: calc(50vh - 210px);
 
     @media screen and (min-width: 320px) and (max-width: 760px) {
         width: 100%;
