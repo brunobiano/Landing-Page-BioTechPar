@@ -196,6 +196,7 @@ export const SectionTeam = styled.div`
         display: flex;
         justify-content: center;
         align-items: center;
+        padding-top: calc(50vh - 300px);
     }
 `;
 

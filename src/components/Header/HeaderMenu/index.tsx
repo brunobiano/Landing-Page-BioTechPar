@@ -1,5 +1,5 @@
 import * as C from './styles';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef  } from 'react';
 
 import menuOpener from './assets/menu.png'
 
@@ -7,6 +7,7 @@ export const MenuList = () => {
     const headerHeight = document.querySelector('.Header')?.clientHeight || 0;
     const isInitialNavVisible = window.innerWidth > 1024;
     const [navVisible, setNavVisible] = useState(isInitialNavVisible);
+    const navRef = useRef(null);
     
     const handleMenuClick = (event: React.MouseEvent, sectionId: string) => {
         event.preventDefault();
@@ -40,6 +41,15 @@ export const MenuList = () => {
         setNavVisible(!navVisible)
     }
 
+    const handleOutsideClick = (event: MouseEvent | TouchEvent) => {
+        const isTouch = 'touches' in event;
+        const target = isTouch ? (event as TouchEvent).touches[0].target : (event as MouseEvent).target;
+    
+        if (navRef.current && !(navRef.current as HTMLElement).contains(target as Node)) {
+          setNavVisible(false);
+        }
+    }
+
     useEffect(() => {
         const handleResize = () => {
           if (window.innerWidth > 1024) {
@@ -51,15 +61,20 @@ export const MenuList = () => {
     
         // Ouvinte de redimensionamento para monitorar a largura da janela
         window.addEventListener('resize', handleResize);
+
+        document.addEventListener('click', handleOutsideClick);
+        document.addEventListener('touchstart', handleOutsideClick);
     
         // Removendo ouvinte ao desmontar o componente
         return () => {
           window.removeEventListener('resize', handleResize);
+          document.removeEventListener('click', handleOutsideClick);
+          document.removeEventListener('touchstart', handleOutsideClick);
         };
     }, []);
     
     return (
-        <C.Container>
+        <C.Container ref={navRef}>
             <img src={menuOpener} alt="" className='menu-opener' onClick={handleToggleNav}/>
             <nav style={{display: navVisible || window.innerWidth > 1024? 'block' : 'none'}}>
                 <C.Ul>
