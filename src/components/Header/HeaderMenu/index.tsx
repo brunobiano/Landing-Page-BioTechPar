@@ -6,7 +6,7 @@ import menuOpener from './assets/menu.png'
 export const MenuList = () => {    
     const headerHeight = document.querySelector('.Header')?.clientHeight || 0;
     const isInitialNavVisible = window.innerWidth > 1024;
-    const [navVisible, setNavVisible] = useState(!isInitialNavVisible);
+    const [navVisible, setNavVisible] = useState(isInitialNavVisible);
     
     const handleMenuClick = (event: React.MouseEvent, sectionId: string) => {
         event.preventDefault();
