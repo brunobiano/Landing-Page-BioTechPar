@@ -179,10 +179,6 @@ export const SectionTeam = styled.div`
         align-items: center;
         padding-top: calc(50vh - 300px);
     }
-
-    @media screen and (min-width: 1200px) and (max-width: 1439px) {
-        padding-top: calc(50vh - 100px);
-    }
 `;
 
 export const SectionRepresented = styled.div`
@@ -222,7 +218,7 @@ export const Contact = styled.div`
         height: auto;
     }
 
-    @media screen and (min-width: 1200px) and (max-width: 1439px) {
+    @media screen and (min-width: 1025px) and (max-width: 1439px) {
         padding-top: calc(20vh - 100px);
     }
 `;

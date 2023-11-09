@@ -4,7 +4,7 @@ import { useState, useEffect, useRef  } from 'react';
 import menuOpener from './assets/menu.png'
 
 export const MenuList = () => {    
-    const headerHeight = document.querySelector('.Header')?.clientHeight || 0;
+    const headerHeight = 0;
     const isInitialNavVisible = window.innerWidth > 1024;
     const [navVisible, setNavVisible] = useState(isInitialNavVisible);
     const navRef = useRef(null);
@@ -14,14 +14,21 @@ export const MenuList = () => {
         const section = document.getElementById(sectionId);
         if (section) {
             let scrollToPosition;
-    
-            if (window.innerWidth > 1024) {
-                scrollToPosition = section.offsetTop - headerHeight - 50;
-            } else if (window.innerWidth >= 761) {
-                scrollToPosition = section.offsetTop - headerHeight - 150;
+            let scrollAdjustment = 0;
+
+            if (window.innerWidth >= 2559) { // se aumento vai pra baixo
+                scrollAdjustment = 250;
+            } else if (window.innerWidth >= 1440 && window.innerWidth < 2569) {
+                scrollAdjustment = 150;
+            } else if (window.innerWidth >= 1366 && window.innerWidth < 1440) {
+                scrollAdjustment = 150;
+            } else if (window.innerWidth >= 761 && window.innerWidth < 1366) {
+                scrollAdjustment = 150;
             } else {
-                scrollToPosition = section.offsetTop - headerHeight - 150;
+                scrollAdjustment = 200;
             }
+
+            scrollToPosition = section.offsetTop - headerHeight - scrollAdjustment;
 
             window.scrollTo({
                 top: scrollToPosition,
@@ -86,3 +93,16 @@ export const MenuList = () => {
         </C.Container>
     )
 };
+
+/*
+
+            let scrollToPosition;
+    
+            if (window.innerWidth > 1024) {
+                scrollToPosition = section.offsetTop - headerHeight - 50;
+            } else if (window.innerWidth >= 761) {
+                scrollToPosition = section.offsetTop - headerHeight - 150;
+            } else {
+                scrollToPosition = section.offsetTop - headerHeight - 150;
+            }
+*/
