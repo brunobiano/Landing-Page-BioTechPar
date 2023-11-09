@@ -16,13 +16,10 @@ export const MenuList = () => {
             let scrollToPosition;
     
             if (window.innerWidth > 1024) {
-                // Tela maior que 1024px: Scroll para a posição original - 50
                 scrollToPosition = section.offsetTop - headerHeight - 50;
             } else if (window.innerWidth >= 761) {
-                // Tela entre 761px e 1024px: Scroll para uma posição diferente
                 scrollToPosition = section.offsetTop - headerHeight - 150;
             } else {
-                // Tela menor que 761px: Scroll para uma posição diferente
                 scrollToPosition = section.offsetTop - headerHeight - 150;
             }
 
@@ -32,7 +29,7 @@ export const MenuList = () => {
             })
         }
 
-        if (window.innerWidth < 1024) { // qualquer posível bug com o nav eu mexo aqui
+        if (window.innerWidth < 1024) {
             setNavVisible(false)
         }
     }
@@ -53,9 +50,9 @@ export const MenuList = () => {
     useEffect(() => {
         const handleResize = () => {
           if (window.innerWidth > 1024) {
-            setNavVisible(true); // Controlar o estado até 1024px
+            setNavVisible(true);
           } else if (window.innerWidth < 1024){
-            setNavVisible(false); // Desativar o controle acima de 1024px
+            setNavVisible(false);
           }
         };
     
@@ -75,7 +72,7 @@ export const MenuList = () => {
     
     return (
         <C.Container ref={navRef}>
-            <img src={menuOpener} alt="" className='menu-opener' onClick={handleToggleNav}/>
+            <img src={menuOpener} alt="Botão abrir/fechar menu" className='menu-opener' onClick={handleToggleNav}/>
             <nav style={{display: navVisible || window.innerWidth > 1024? 'block' : 'none'}}>
                 <C.Ul>
                     <li className='line'><a href='#home' onClick={(e) => handleMenuClick(e, 'home')}><b>HOME</b></a></li>
@@ -89,5 +86,3 @@ export const MenuList = () => {
         </C.Container>
     )
 };
-
-/*tente diminuuir a altura em modo de celular e teste os botoes*/

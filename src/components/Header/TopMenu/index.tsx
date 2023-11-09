@@ -19,4 +19,6 @@ export const TopMenu = () => {
     );
 }
 
-/*testando sem o tel */
+/*testando sem o tel 
+
+            <a style={{backgroundColor: 'red'}} className='phoneHidden' href="https://wa.me/5541992881987" target='_blank' rel='noreferrer'><img src={phoneIcon} alt="" width='12px'/>+55 (41) 99288-1987</a>*/

@@ -14,8 +14,8 @@ export const Container = styled.div`
         nav {
             display: none;
             position: absolute;
-            z-index: 99;
-            height: calc(100vh - 340px);
+            z-index: 98;
+            height: 450px;
             background-color: rgba(255, 255, 255, 0.8);
             width: 90vw;
             top: 115px;
@@ -40,8 +40,8 @@ export const Container = styled.div`
         nav {
             display: none;
             position: absolute;
-            z-index: 99;
-            height: calc(100vh - 300px);
+            z-index: 98;
+            height: 400px;
             background-color: rgba(255, 255, 255, 0.8);
             width: 40vw;
             top: 115px;

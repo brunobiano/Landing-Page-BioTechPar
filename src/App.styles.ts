@@ -25,14 +25,6 @@ export const Header = styled.div`
     width: 100%;
     background-color: #FFF;
     z-index: 1;
-
-    @media screen and (min-width: 320px) and (max-width: 760px) {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 100%;
-        height: auto;
-    }
 `;
 
 export const HeaderArea = styled.div`
@@ -41,12 +33,7 @@ export const HeaderArea = styled.div`
     justify-content: space-between;
 
     @media screen and (min-width: 320px) and (max-width: 760px) {
-        width: 320px;
-        height: 75px;
-        margin-top: 45px;
-        margin-left: 0px;
-        display: block;
-        justify-content: center;
+        margin-top: 115px;
     }
 `;
 
@@ -58,7 +45,6 @@ export const Menu1 = styled.div`
 
     @media screen and (min-width: 320px) and (max-width: 760px){
         height: 40px;
-        display: flex;
         justify-content: space-between;
     }
 `;
@@ -77,14 +63,8 @@ export const Logo = styled.div`
     }
 
     @media screen and (min-width: 320px) and (max-width: 760px) {
-        padding: 0px;
-        margin-left: 30px;
-        width: 200px;
-        
         img {
             display: none;
-            width: 200px;
-            padding-bottom: 30px;
        }
     }
 
@@ -104,10 +84,6 @@ export const MenuArea = styled.div`
 
     @media screen and (min-width: 320px) and (max-width: 760px) {
         font-size: 8px;
-    }
-
-    @media screen and (min-width: 761px) and (max-width: 1024px) {
-        
     }
 `;
 
@@ -160,6 +136,7 @@ export const About = styled.div`
     @media screen and (min-width: 320px) and (max-width: 760px) {
         margin-left: 0px;
         width: 90%;
+
         p {
             font-size: 12px;
         }
@@ -219,11 +196,6 @@ export const SectionRepresented = styled.div`
         width: 100%;
         height: 550px;
     }
-
-    @media screen and (min-width: 761px) and (max-width: 1024px) {
-        width: 100%;
-        height: auto;
-    }
 `;
 
 export const SectionServices = styled.div`
@@ -234,11 +206,6 @@ export const SectionServices = styled.div`
     height: auto;
     padding-top: 270px;
     padding-bottom: 50px;
-    
-    @media screen and (min-width: 320px) and (max-width: 760px) {
-        width: 100%;
-        height: auto;
-    }
 `;
 
 export const Contact = styled.div`
@@ -248,8 +215,7 @@ export const Contact = styled.div`
 
     @media screen and (min-width: 320px) and (max-width: 760px) {
         height: auto;
-        width: 100%;
-        margin-top: 100px; // tirar aqui caso bigode
+        margin-top: 100px;
     }
 
     @media screen and (min-width: 761px) and (max-width: 1024px){
@@ -295,8 +261,3 @@ export const Footer = styled.footer`
         }
     }
 `;
-
-/* Lembretes para serem feitos:
-    - Fazer responsividade para orientation: landscape
-    - O mesmo para as outras dimensões de tela.
-*/

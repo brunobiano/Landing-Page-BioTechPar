@@ -27,7 +27,7 @@ const App = () => {
         </C.Menu1>
         <C.HeaderArea>
           <C.Logo>
-            <a href="#"><img src={bioLogo} alt="Logotipo do Meu Site"/></a>
+            <a href="#"><img src={bioLogo} alt="Logotipo da empresa BioTechPar"/></a>
           </C.Logo>
           <C.MenuArea>
             <MenuList />
@@ -36,7 +36,7 @@ const App = () => {
       </C.Header>
 
       <C.SectionHome id='home'>
-        <img src={BioTech} alt=""/>
+        <img src={BioTech} alt="Gif com a logo da empresa BioTechPar"/>
       </C.SectionHome>
       
       <C.EnterpriseSection id='ourMission'>
@@ -81,8 +81,6 @@ export default App;
 // Lembretes
 
 /* 
-  Botão criado em contactText vai virar um componente e talvez vai sair dessa area, na div de fora.
-
-  falta responsividade, acessibilidade (perguntar se o evandro quer após ver como faz),
+  acessibilidade, enxugar código em todos os components.
   fazer funcionar em outros navegadores além do chrome.
 */
