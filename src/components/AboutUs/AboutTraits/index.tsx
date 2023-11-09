@@ -18,7 +18,7 @@ export const AboutUsTraits = () => {
             <p>
                 <img src={vision} alt="" className='rotate-effect'/>
                 <strong>&nbsp; Visão: </strong>
-                Ser a principal referência no setor de biotecnologia
+                Ser a principal referência no setor de Biotecnologia
                 como representante das maiores e mais renomadas empresas <br />
                 deste segmento.
             </p>
