@@ -1,5 +1,5 @@
 import * as C from './style';
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import InputMask from 'react-input-mask';
 
 import phone from './assets/phone.png';
@@ -9,6 +9,7 @@ import whatsapp from './assets/whatsapp.png';
 export const ContactUs = () => {
     const [selectedOption, setSelectedOption] = useState<string>("");
     const [isInputVisible, setInputVisible] = useState<boolean>(false);
+    const inputMaskRef = useRef(null);
 
     const handleOptionChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
         const selectedValue = event.target.value;
@@ -30,8 +31,8 @@ export const ContactUs = () => {
                 <div className='contactNumbers'><h1>Entre em Contato</h1></div>
                 <C.OurContacts className='top-left'>
                     <C.Title>
-                        <img src={phone} alt="" />
-                        <img src={whatsapp} alt="" />
+                        <img src={phone} alt="Telefone" />
+                        <img src={whatsapp} alt="WhatsApp" />
                         <h4>Telefone</h4>
                     </C.Title>
                     <C.Body>
@@ -40,7 +41,7 @@ export const ContactUs = () => {
                 </C.OurContacts>
                 <C.OurContacts className='bottom-left'>
                     <C.Title>
-                        <img src={email} alt="" width={30}/>
+                        <img src={email} alt="Email de Evandro" width={30}/>
                         <h4>E-mail</h4>
                     </C.Title>
                     <C.Body>
@@ -49,12 +50,12 @@ export const ContactUs = () => {
                 </C.OurContacts>
             </C.LeftSide>
             <C.RightSide>
-                <C.Inputs action='https://getform.io/f/0feabbb6-4da3-428d-87ba-9a5b0be046d9' method='POST'>
+                <C.Inputs action='https://getform.io/f/c31b4a26-c9eb-4dd0-b933-b6e6bc01faef' method='POST'>
                     <input type="text" name='Nome' className='left1' placeholder='Nome' required/>
-                    <InputMask mask="(99) 99999 9999" type="tel" name='Telefone' className='right1' placeholder='Telefone' required/>
+                    <InputMask ref={inputMaskRef} mask="(99) 99999 9999" type="tel" name='Telefone' className='right1' placeholder='Telefone' required/>
                     <input type="email" name='Email' className='left2' placeholder='E-mail'/>
                     <select className='right2' name='Empresa' value={selectedOption} onChange={handleOptionChange}>
-                        <option value='' selected>Escolha uma opção</option>
+                        <option value=''>Escolha uma opção</option>
                         <option value="Universidade">Universidade</option>
                         <option value="Laboratório">Laboratório</option>
                         <option value="Hospital">Hospital</option>
@@ -75,3 +76,7 @@ export const ContactUs = () => {
         </C.Container>
     );
 };
+
+/*Remove prop ref
+tirar const inputMaskRef
+tirar import ref */

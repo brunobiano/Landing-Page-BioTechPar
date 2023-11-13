@@ -9,7 +9,7 @@ export const RepEnterprises = () => {
                 <h1>Empresas Representadas</h1>
             </C.Title>
             <C.Body>
-                <img src={Dna} alt="" />
+                <img src={Dna} alt="Logo da empresa DNA GTx" />
                 <p>
                     A DNA GTx Bioinformatics é uma empresa de Bioinformática
                     e Biotecnologia que fornece soluções inovadoras e 
