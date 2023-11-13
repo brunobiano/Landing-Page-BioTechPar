@@ -93,16 +93,3 @@ export const MenuList = () => {
         </C.Container>
     )
 };
-
-/*
-
-            let scrollToPosition;
-    
-            if (window.innerWidth > 1024) {
-                scrollToPosition = section.offsetTop - headerHeight - 50;
-            } else if (window.innerWidth >= 761) {
-                scrollToPosition = section.offsetTop - headerHeight - 150;
-            } else {
-                scrollToPosition = section.offsetTop - headerHeight - 150;
-            }
-*/

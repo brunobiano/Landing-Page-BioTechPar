@@ -10,7 +10,7 @@ import meta from './assets/gtx-meta.png';
 import seqRna from './assets/SEQUENCIAMENTO DE RNA.png';
 import rna from './assets/GTX-RNA.png';
 
-import proteo from './assets/teste.png';
+import proteo from './assets/GTX-PROTEO.png';
 
 import pipeline from './assets/pipeline.png';
 
@@ -25,17 +25,7 @@ type Props = {
 }
 
 export const ServiceSubItem = ({ visibleSubMenu, detailedBottom, isExpanded, handleShowSubMenu, handleClickSubMenu }: Props) => {
-    const [expandedItems, setExpandedItems] = useState<{ [key: string]: boolean }>({
-        ngs: false,
-        dkrypt: false,
-        onco: false,
-        gtxMeta: false,
-        sequenciamento: false,
-        gtxRna: false,
-        gtxProteo: false,
-        gtxPipeline: false,
-        cursos: false,
-    });
+    const [expandedItems, setExpandedItems] = useState<{ [key: string]: boolean }>({});
 
     const handleExpandItem = (itemName: string) => {
         // Criando uma cópia do objeto de estado atual
@@ -60,17 +50,7 @@ export const ServiceSubItem = ({ visibleSubMenu, detailedBottom, isExpanded, han
     };
 
     useEffect(() => {
-        setExpandedItems({
-            ngs: false,
-            dkrypt: false,
-            onco: false,
-            gtxMeta: false,
-            sequenciamento: false,
-            gtxRna: false,
-            gtxProteo: false,
-            gtxPipeline: false,
-            cursos: false
-        });
+        setExpandedItems({});
     }, [visibleSubMenu]);
 
     return (
@@ -91,7 +71,7 @@ export const ServiceSubItem = ({ visibleSubMenu, detailedBottom, isExpanded, han
                             {expandedItems['ngs'] && detailedBottom === 'ngs' && (
                                 <C.SubBottomDetailed>
                                     <C.ImageContainer>
-                                        <img src={ngs} alt="" />
+                                        <img src={ngs} alt="Imagem relativa ao serviço NGS (Sequenciamento de Nova Geração)" />
                                     </C.ImageContainer>
                                     <ul>
                                         <li>➡ Sequenciamento de exoma completo</li>
@@ -110,7 +90,7 @@ export const ServiceSubItem = ({ visibleSubMenu, detailedBottom, isExpanded, han
                             {expandedItems['dkrypt'] && detailedBottom === 'dkrypt' && (
                                 <C.SubBottomDetailed>
                                     <C.ImageContainer>
-                                        <img src={dkrypt} alt="" />
+                                        <img src={dkrypt} alt="Imagem relativa ao serviço de software D-krypt" />
                                     </C.ImageContainer>
                                     <ul>
                                         <li>➡ Montagem de genomas</li>
@@ -129,7 +109,7 @@ export const ServiceSubItem = ({ visibleSubMenu, detailedBottom, isExpanded, han
                             {expandedItems['onco'] && detailedBottom === 'onco' && (
                                 <C.SubBottomDetailed>
                                     <C.ImageContainer>
-                                        <img src={onco} alt="" />
+                                        <img src={onco} alt="Imagem relacionada ao serviço GTx-Onco" />
                                     </C.ImageContainer>
                                     <ul>
                                         <li>➡ Relatório para interpretação de dados genômicos do câncer</li>
@@ -160,7 +140,7 @@ export const ServiceSubItem = ({ visibleSubMenu, detailedBottom, isExpanded, han
                             {detailedBottom === 'gtxMeta' && (
                                 <C.SubBottomDetailed height='90%' fontSize='12px'>
                                     <C.ImageContainer>
-                                        <img src={meta} alt="" />
+                                        <img src={meta} alt="Imagem relativa ao serviço GTx-Meta" />
                                     </C.ImageContainer>
                                     <ul>
                                         <li>➡ Sequenciamento metagenômico 16S ou Shotgun</li>
@@ -194,7 +174,7 @@ export const ServiceSubItem = ({ visibleSubMenu, detailedBottom, isExpanded, han
                             {detailedBottom === 'sequenciamento' && (
                                 <C.SubBottomDetailed>
                                     <C.ImageContainer>
-                                        <img src={seqRna} alt="" />
+                                        <img src={seqRna} alt="Imagem relacionada ao serviço de Sequenciamente de RNA" />
                                     </C.ImageContainer>
                                     <ul>
                                         <li>➡ Técnica capaz de analisar padrões das expressões gênicas através do sequenciamento de larga escala (Sequenciamento de Nova Geração - NGS) do RNA presente em uma amostra</li>
@@ -210,7 +190,7 @@ export const ServiceSubItem = ({ visibleSubMenu, detailedBottom, isExpanded, han
                             {detailedBottom === 'gtxRna' && (
                                 <C.SubBottomDetailed>
                                     <C.ImageContainer>
-                                        <img src={rna} alt="" />
+                                        <img src={rna} alt="Imagem relativa ao serviço GTx-RNA" />
                                     </C.ImageContainer>
                                     <ul>
                                         <li>➡ Análises de expressão gênica e splicing alternatio</li>
@@ -237,7 +217,7 @@ export const ServiceSubItem = ({ visibleSubMenu, detailedBottom, isExpanded, han
                             {detailedBottom === 'gtxProteo' && (
                                 <C.SubBottomDetailed>
                                     <C.ImageContainer width='55%'>
-                                        <img src={proteo} alt="" />
+                                        <img src={proteo} alt="Imagem relativa ao serviço GTx-Proteo" />
                                     </C.ImageContainer>
                                     <ul>
                                         <li>➡ Integração de dados genômicos, transcriptômicos e proteômicos</li>
@@ -265,7 +245,7 @@ export const ServiceSubItem = ({ visibleSubMenu, detailedBottom, isExpanded, han
                             {detailedBottom === 'gtxPipeline' && (
                                 <C.SubBottomDetailed>
                                     <C.ImageContainer>
-                                        <img src={pipeline} alt='' />
+                                        <img src={pipeline} alt='Imagem relativa ao serviço GTx-Pipeline' />
                                     </C.ImageContainer>
                                     <ul>
                                         <li>➡ Desenvolvimento e otimização de softwares de Bioinformática desenvolvidos pela sua empresa</li>
@@ -291,7 +271,7 @@ export const ServiceSubItem = ({ visibleSubMenu, detailedBottom, isExpanded, han
                             {detailedBottom === 'cursos' && (
                                 <C.SubBottomDetailed>
                                     <C.ImageContainer>
-                                        <img src={cursos} alt="" />
+                                        <img src={cursos} alt="Imagem relativa ao serviço Cursos" />
                                     </C.ImageContainer>
                                     <ul>
                                         <li>➡ Introdução à Bioinformática</li>

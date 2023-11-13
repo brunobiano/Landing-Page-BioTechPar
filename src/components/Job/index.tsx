@@ -1,8 +1,7 @@
 import { ServiceItem } from './ServiceUl';
 import { ServiceSubItem } from './ServiceSubItem';
-import { Testing } from './TestingSumary';
-import * as C from './style';
 
+import * as C from './style';
 import { useState } from 'react';
 
 export const Services = () => {
@@ -66,7 +65,7 @@ export const Services = () => {
             <C.Body>
                 <C.Ul>
                    {menuItems.map((item, index) => (
-                    <ServiceItem /*Menu verde: genomica, metagenomica, etc... */
+                    <ServiceItem
                         key={index}
                         title={item}
                         visibleSubMenu={visibleSubMenu}
@@ -90,24 +89,3 @@ export const Services = () => {
         </C.Container>
     );
 }
-
-/*
-    
-
-    colocar o gif certo para cada item do menu que estiver aberto (provavel jogar a div onde ele está lado a lado com a div SubBottomDetailed)
-    quando clicar na caixinha que não está aberta, a aberta fecha e abre a clicada (feito porém precisa de um efeitinho)
-    
-    Deixar mais bonito
-    (olhar CSSTransition)
-
-    gtxProteo mudar imagem (70/30 vai ter que ser alterado pra conseguir ler imagem)
-    colocar texto do Rna
-
-    <ServiceSubItem /*sub Menus: dkrypt, onco, etc... 
-    visibleSubMenu={visibleSubMenu}
-    detailedBottom={detailedBottom}
-    isExpanded={isExpanded}
-    handleShowSubMenu={handleShowSubMenu}
-    handleClickSubMenu={handleClickSubMenu}
-    />  
-*/

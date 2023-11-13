@@ -1,6 +1,5 @@
 import * as C from './style';
 
-
 type Props = {
     title: string,
     visibleSubMenu: string | null,
