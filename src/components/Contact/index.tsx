@@ -1,6 +1,5 @@
 import * as C from './style';
 import React, { useState, useRef } from 'react';
-import InputMask from 'react-input-mask';
 
 import phone from './assets/phone.png';
 import email from './assets/mail.png';
@@ -52,7 +51,7 @@ export const ContactUs = () => {
             <C.RightSide>
                 <C.Inputs action='https://getform.io/f/c31b4a26-c9eb-4dd0-b933-b6e6bc01faef' method='POST'>
                     <input type="text" name='Nome' className='left1' placeholder='Nome' required/>
-                    <InputMask ref={inputMaskRef} mask="(99) 99999 9999" type="tel" name='Telefone' className='right1' placeholder='Telefone' required/>
+                    <input ref={inputMaskRef} /*mask="(99) 99999 9999"*/ type="tel" name='Telefone' className='right1' placeholder='Telefone' required/>
                     <input type="email" name='Email' className='left2' placeholder='E-mail'/>
                     <select className='right2' name='Empresa' value={selectedOption} onChange={handleOptionChange}>
                         <option value=''>Escolha uma opção</option>
