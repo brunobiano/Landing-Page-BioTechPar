@@ -145,6 +145,6 @@ export const SubServicesArea = styled.div`
     }
 
     @media screen and (min-width: 761px) and (max-width: 1024px) {
-        height: 800px; // mexer aqui depois de alterar dkrypt
+        height: 800px;
     }
 `;

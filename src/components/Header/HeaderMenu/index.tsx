@@ -16,7 +16,8 @@ export const MenuList = () => {
             let scrollToPosition;
             let scrollAdjustment = 0;
 
-            if (window.innerWidth >= 2559) { // se aumento vai pra baixo
+            // Condicionais para ajuste de scroll dependendo do tamanho do display.
+            if (window.innerWidth >= 2559) {
                 scrollAdjustment = 250;
             } else if (window.innerWidth >= 1440 && window.innerWidth < 2569) {
                 scrollAdjustment = 150;

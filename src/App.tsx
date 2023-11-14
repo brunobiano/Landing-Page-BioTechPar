@@ -77,10 +77,3 @@ const App = () => {
 }
 
 export default App;
-
-// Lembretes
-
-/* 
-  acessibilidade, enxugar código em todos os components.
-  fazer funcionar em outros navegadores além do chrome.
-*/

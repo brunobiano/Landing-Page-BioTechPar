@@ -18,7 +18,7 @@ export const SubBottom = styled.div`
     font-size: 18px;
     cursor: pointer;
     width: 100%;
-    padding-top: 100px; // talvez mexer aqui
+    padding-top: 100px;
     font-weight: bold;
 
     li {

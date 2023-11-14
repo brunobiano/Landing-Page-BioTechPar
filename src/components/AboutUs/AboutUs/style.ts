@@ -15,7 +15,7 @@ export const Container = styled.div`
 
     @media screen and (min-width: 320px) and (max-width: 760px) {
         width: 100%;
-        text-align: justify; // center
+        text-align: justify;
         font-size: 12px;
         
         p {
