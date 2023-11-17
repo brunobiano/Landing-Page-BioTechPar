@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/Landing-Page-BioTechPar/static/css/main.b7dd3289.css",
+    "main.js": "/Landing-Page-BioTechPar/static/js/main.95988f23.js",
+    "static/js/787.71e672d5.chunk.js": "/Landing-Page-BioTechPar/static/js/787.71e672d5.chunk.js",
+    "static/media/banner.gif": "/Landing-Page-BioTechPar/static/media/banner.712e88718dca9d787868.gif",
+    "static/media/gtx-meta.png": "/Landing-Page-BioTechPar/static/media/gtx-meta.179e5c5917d32e3387a8.png",
+    "static/media/pipeline.png": "/Landing-Page-BioTechPar/static/media/pipeline.cdb7cbde70c641f40ce5.png",
+    "static/media/CURSOS.png": "/Landing-Page-BioTechPar/static/media/CURSOS.58f69ca3a9589453d346.png",
+    "static/media/GTX ONCO .png": "/Landing-Page-BioTechPar/static/media/GTX ONCO .00d04ddcb7c6e8c880cf.png",
+    "static/media/SEQUENCIAMENTO DE NOVA GERAÇÃO (NGS).png": "/Landing-Page-BioTechPar/static/media/SEQUENCIAMENTO DE NOVA GERAÇÃO (NGS).d5e58947dc240a1afda3.png",
+    "static/media/SEQUENCIAMENTO DE RNA.png": "/Landing-Page-BioTechPar/static/media/SEQUENCIAMENTO DE RNA.ce126c8bf6cc5a989271.png",
+    "static/media/D-KRYPT - 1.png": "/Landing-Page-BioTechPar/static/media/D-KRYPT - 1.3c036b6803ac392487f0.png",
+    "static/media/img.jpg": "/Landing-Page-BioTechPar/static/media/img.2da946e7ddcc7fad3116.jpg",
+    "static/media/GTX-RNA.png": "/Landing-Page-BioTechPar/static/media/GTX-RNA.09ea121b1dc15b14d6d2.png",
+    "static/media/img2.jpg": "/Landing-Page-BioTechPar/static/media/img2.a8eb0104359ac965dce5.jpg",
+    "static/media/GTX-PROTEO.png": "/Landing-Page-BioTechPar/static/media/GTX-PROTEO.4a737e6e428ffa316b20.png",
+    "static/media/dnaGtx.png": "/Landing-Page-BioTechPar/static/media/dnaGtx.d5187a95ba0c7657fb15.png",
+    "static/media/whatsapp2.png": "/Landing-Page-BioTechPar/static/media/whatsapp2.5ee61a869c50b92906a8.png",
+    "static/media/logo.png": "/Landing-Page-BioTechPar/static/media/logo.5cba0562b56df2bf99c1.png",
+    "static/media/Pictogrammers-Material-Whatsapp.512.png": "/Landing-Page-BioTechPar/static/media/Pictogrammers-Material-Whatsapp.512.f8ea87c3f0f8bb82c95b.png",
+    "static/media/whatsapp.png": "/Landing-Page-BioTechPar/static/media/whatsapp.f8ea87c3f0f8bb82c95b.png",
+    "index.html": "/Landing-Page-BioTechPar/index.html",
+    "main.b7dd3289.css.map": "/Landing-Page-BioTechPar/static/css/main.b7dd3289.css.map",
+    "main.95988f23.js.map": "/Landing-Page-BioTechPar/static/js/main.95988f23.js.map",
+    "787.71e672d5.chunk.js.map": "/Landing-Page-BioTechPar/static/js/787.71e672d5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b7dd3289.css",
+    "static/js/main.95988f23.js"
+  ]
+}
