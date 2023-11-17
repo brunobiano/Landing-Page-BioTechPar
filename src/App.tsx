@@ -1,4 +1,5 @@
 import * as C from './App.styles';
+import { useEffect } from 'react';
 
 // Images
 import bioLogo from './assets/logo.png';
@@ -18,6 +19,10 @@ import { ContactUs } from './components/Contact';
 import { ScrollImage } from './components/ScrollWhatsapp';
 
 const App = () => {
+  useEffect(() => {
+    document.title = 'BiotechPar'
+  }, []);
+  
   return (
   <C.BodyContainer>
     <C.Container>
@@ -27,7 +32,7 @@ const App = () => {
         </C.Menu1>
         <C.HeaderArea>
           <C.Logo>
-            <a href="#"><img src={bioLogo} alt="Logotipo da empresa BioTechPar"/></a>
+            <a href="#" role='button'><img src={bioLogo} alt="Logotipo da empresa BioTechPar"/></a>
           </C.Logo>
           <C.MenuArea>
             <MenuList />

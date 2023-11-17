@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-interface ImageContainer {
+interface ImageContainerType {
     width?: string;
     height?: string;
     fontSize?: string;
@@ -111,7 +111,7 @@ export const TitleArea = styled.div`
     }
 `;
 
-export const SubBottomDetailed = styled.div<ImageContainer>`  
+export const SubBottomDetailed = styled.div<ImageContainerType>`  
     display: flex;
     width: 100%;
 
@@ -174,7 +174,7 @@ export const SubBottomDetailed = styled.div<ImageContainer>`
     }
 `;
 
-export const ImageContainer = styled.div<ImageContainer>`
+export const ImageContainer = styled.div<ImageContainerType>`
     width: ${(props) => props.width || '30%'};
     overflow: hidden;
 
